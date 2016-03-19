@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Waypoints</string>
+    <string name="string_cadastro">Cadastre-se</string>
+    <string name="string_esquecisenha">Esqueci minha senha</string>
+    <string name="string_botaologin">Entrar</string>
+    <string name="string_textfieldEmail">Email</string>
+    <string name="string_textfieldSenha">Senha</string>
+    <string name="string_cadastronome">Nome</string>
+    <string name="string_seuemail">Email</string>
+    <string name="string_confirmarSenha">Confirmar Senha</string>
+    <string name="string_categoriaCNH">Categoria CNH</string>
+    <string name="string_datanasc">Data Nasc.</string>
+    <string name="string_sexo">Sexo</string>
+    <string name="string_sexomasculino">Masculino</string>
+    <string name="string_sexofeminino">Feminino</string>
 </resources>

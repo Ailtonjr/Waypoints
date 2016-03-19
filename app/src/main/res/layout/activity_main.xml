@@ -7,21 +7,65 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.com.waypoints.waypoints.MainActivity">
+    tools:context="br.com.waypoints.waypoints.MainActivity"
+    android:background="#000000">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:weightSum="1"
+        android:background="#225060">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="116dp" />
+        <ImageView
+            android:layout_width="212dp"
+            android:layout_height="222dp"
+            android:id="@+id/imageViewLogo"
+            android:src="@drawable/logo_sem_fundo"
+            android:layout_weight="0.16" />
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editTextEmail"
+            android:autoText="false"
+            android:text="@string/string_botaologin"
+            android:backgroundTintMode="multiply" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editTextSenha"
+            android:text="@string/string_textfieldSenha" />
+
+        <Button
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="@string/string_botaologin"
+            android:id="@+id/button"
+            android:backgroundTint="#44849d"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/string_cadastro"
+            android:id="@+id/textViewCadastro"
+            android:contextClickable="false"
+            android:textColor="#429dff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/string_esquecisenha"
+            android:id="@+id/textViewEsqueciSenha"
+            android:textColor="#429dff" />
+    </LinearLayout>
 </RelativeLayout>

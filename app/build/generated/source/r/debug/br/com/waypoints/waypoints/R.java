@@ -1638,7 +1638,7 @@ containing a value of this type.
         public static final int alertTitle=0x7f0c0030;
         public static final int always=0x7f0c001c;
         public static final int beginning=0x7f0c0019;
-        public static final int button=0x7f0c0066;
+        public static final int buttonEntrar=0x7f0c0066;
         public static final int buttonPanel=0x7f0c002b;
         public static final int cancel_action=0x7f0c0071;
         public static final int checkBox=0x7f0c0061;
@@ -1672,7 +1672,7 @@ containing a value of this type.
         public static final int image=0x7f0c0026;
         public static final int imageButton=0x7f0c0050;
         public static final int imageButton2=0x7f0c005a;
-        public static final int imageViewLogo=0x7f0c0064;
+        public static final int imageView=0x7f0c0064;
         public static final int info=0x7f0c007b;
         public static final int line1=0x7f0c0075;
         public static final int line3=0x7f0c0079;

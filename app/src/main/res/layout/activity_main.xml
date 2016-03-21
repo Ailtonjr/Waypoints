@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:screenOrientation="portrait"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -8,48 +9,50 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.waypoints.waypoints.MainActivity"
-    android:background="#000000">
+    android:background="#225060">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
-        android:weightSum="1"
-        android:background="#225060">
+        android:weightSum="1">
 
         <ImageView
-            android:layout_width="212dp"
-            android:layout_height="222dp"
-            android:id="@+id/imageViewLogo"
-            android:src="@drawable/logo_sem_fundo"
-            android:layout_weight="0.16" />
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo_sem_fundo" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:ems="10"
             android:id="@+id/editTextEmail"
             android:autoText="false"
             android:text="@string/string_botaologin"
-            android:backgroundTintMode="multiply" />
+            android:backgroundTintMode="multiply"
+            android:layout_marginBottom="10dp" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/editTextSenha"
-            android:text="@string/string_textfieldSenha" />
+            android:text="@string/string_textfieldSenha"
+            android:layout_marginBottom="20dp" />
 
         <Button
-            android:layout_width="136dp"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/string_botaologin"
-            android:id="@+id/button"
+            android:id="@+id/buttonEntrar"
             android:backgroundTint="#44849d"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -58,7 +61,8 @@
             android:text="@string/string_cadastro"
             android:id="@+id/textViewCadastro"
             android:contextClickable="false"
-            android:textColor="#429dff" />
+            android:textColor="#429dff"
+            android:textSize="15dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -66,6 +70,8 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/string_esquecisenha"
             android:id="@+id/textViewEsqueciSenha"
-            android:textColor="#429dff" />
+            android:textColor="#429dff"
+            android:textSize="15dp" />
+
     </LinearLayout>
 </RelativeLayout>

@@ -475,7 +475,7 @@ int id activity_chooser_view_content 0x7f0c0024
 int id alertTitle 0x7f0c0030
 int id always 0x7f0c001c
 int id beginning 0x7f0c0019
-int id button 0x7f0c0066
+int id buttonEntrar 0x7f0c0066
 int id buttonPanel 0x7f0c002b
 int id cancel_action 0x7f0c0071
 int id checkBox 0x7f0c0061
@@ -509,7 +509,7 @@ int id ifRoom 0x7f0c001e
 int id image 0x7f0c0026
 int id imageButton 0x7f0c0050
 int id imageButton2 0x7f0c005a
-int id imageViewLogo 0x7f0c0064
+int id imageView 0x7f0c0064
 int id info 0x7f0c007b
 int id line1 0x7f0c0075
 int id line3 0x7f0c0079

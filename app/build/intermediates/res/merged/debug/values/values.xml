@@ -31,8 +31,8 @@
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorPrimary">#225060</color>
-    <color name="colorPrimaryDark">#193c48</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
@@ -215,6 +215,7 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">Waypoints</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="string_ailton">Ailton Cardoso Júnior: Grande Mestre</string>
     <string name="string_botaologin">Entrar</string>
     <string name="string_cadastro">Cadastre-se</string>
     <string name="string_cadastronome">Nome</string>
@@ -222,12 +223,18 @@
     <string name="string_confirmarSenha">Confirmar Senha</string>
     <string name="string_datanasc">Data Nasc.</string>
     <string name="string_esquecisenha">Esqueci minha senha</string>
+    <string name="string_guiga">Guilherme Gustavo Gohr: Telaboy</string>
+    <string name="string_joao">João Felipe Gonçalves: Garoto programador</string>
+    <string name="string_notificacoes">Notificações</string>
+    <string name="string_romulo">Rômulo Goelzer Portolann: Master of SQL</string>
     <string name="string_seuemail">Email</string>
     <string name="string_sexo">Sexo</string>
     <string name="string_sexofeminino">Feminino</string>
     <string name="string_sexomasculino">Masculino</string>
+    <string name="string_sobre">Sobre</string>
     <string name="string_textfieldEmail">Email</string>
     <string name="string_textfieldSenha">Senha</string>
+    <string name="string_waypointsteam">Waypoints Team:</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

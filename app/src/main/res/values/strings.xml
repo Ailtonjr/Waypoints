@@ -13,4 +13,14 @@
     <string name="string_sexo">Sexo</string>
     <string name="string_sexomasculino">Masculino</string>
     <string name="string_sexofeminino">Feminino</string>
+    <string name="string_notificacoes">Notificações</string>
+
+
+    //String Sobre
+    <string name="string_sobre">Sobre</string>
+    <string name="string_waypointsteam">Waypoints Team:</string>
+    <string name="string_ailton">Ailton Cardoso Júnior: Grande Mestre</string>
+    <string name="string_joao">João Felipe Gonçalves: Garoto programador</string>
+    <string name="string_guiga">Guilherme Gustavo Gohr: Telaboy</string>
+    <string name="string_romulo">Rômulo Goelzer Portolann: Master of SQL</string>
 </resources>

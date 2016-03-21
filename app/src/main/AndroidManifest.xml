@@ -15,7 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CadastroActivity"></activity>
+        <activity android:name=".CadastroActivity" />
+        <activity android:name=".ConfigActivity" />
+        <activity android:name=".PrincipalActivity" />
+        <activity android:name=".RotasActivity" />
+        <activity android:name=".SobreActivity"></activity>
     </application>
 
 </manifest>

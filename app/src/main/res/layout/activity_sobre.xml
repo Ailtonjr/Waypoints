@@ -11,52 +11,73 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:gravity="clip_horizontal|clip_vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/string_sobre"
-            android:id="@+id/textViewSobre"
-            android:backgroundTint="#ff0000"
-            android:backgroundTintMode="src_over" />
+        <ImageView
+            android:layout_width="297dp"
+            android:layout_height="170dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo_sem_fundo"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/string_waypointsteam"
-            android:id="@+id/textViewWPTeam" />
+            android:id="@+id/textViewWPTeam"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/string_ailton"
-            android:id="@+id/textViewAiltu" />
+            android:id="@+id/textViewAilton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/string_guilherme"
+            android:id="@+id/textViewGuilherme"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/string_joao"
-            android:id="@+id/textViewJoao" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/string_guiga"
-            android:id="@+id/textViewGuiga" />
+            android:id="@+id/textViewJoao"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/string_romulo"
-            android:id="@+id/textViewRomulo" />
+            android:id="@+id/textViewRomulo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_site"
+            android:id="@+id/textViewSite"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:textSize="21dp" />
+
     </LinearLayout>
 </RelativeLayout>

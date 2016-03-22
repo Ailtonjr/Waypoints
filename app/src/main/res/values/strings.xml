@@ -13,14 +13,14 @@
     <string name="string_sexo">Sexo</string>
     <string name="string_sexomasculino">Masculino</string>
     <string name="string_sexofeminino">Feminino</string>
-    <string name="string_notificacoes">Notificações</string>
+    <string name="string_notificacoes">Exibir notificações</string>
 
 
     //String Sobre
-    <string name="string_sobre">Sobre</string>
-    <string name="string_waypointsteam">Waypoints Team:</string>
-    <string name="string_ailton">Ailton Cardoso Júnior: Grande Mestre</string>
-    <string name="string_joao">João Felipe Gonçalves: Garoto programador</string>
-    <string name="string_guiga">Guilherme Gustavo Gohr: Telaboy</string>
-    <string name="string_romulo">Rômulo Goelzer Portolann: Master of SQL</string>
+    <string name="string_waypointsteam">Developer Team</string>
+    <string name="string_ailton">Ailton Cardoso Júnior</string>
+    <string name="string_guilherme">Guilherme Gustavo Gohr Darosci</string>
+    <string name="string_joao">João Felipe Gonçalves</string
+    <string name="string_romulo">Rômulo Göelzer Portolann</string>
+    <string name="string_site">www.waypoints.com.br</string>
 </resources>

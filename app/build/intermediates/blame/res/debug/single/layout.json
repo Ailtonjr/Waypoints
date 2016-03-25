@@ -204,6 +204,10 @@
         "source": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
+        "merged": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_item_list.xml",
+        "source": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\src\\main\\res\\layout\\fragment_item_list.xml"
+    },
+    {
         "merged": "C:\\Waypoints-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
         "source": "C:\\Waypoints-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_media.xml"
     },
@@ -306,6 +310,10 @@
     {
         "merged": "C:\\Waypoints-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "C:\\Waypoints-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_item.xml",
+        "source": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\src\\main\\res\\layout\\fragment_item.xml"
     },
     {
         "merged": "C:\\Waypoints-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",

@@ -16,6 +16,12 @@
     <string name="string_notificacoes">Notificações</string>
 
 
+
+    //Tela rotas
+
+    <string name="string_nomedarota">Notificações</string>
+
+
     //String Sobre
     <string name="string_sobre">Sobre</string>
     <string name="string_waypointsteam">Waypoints Team:</string>

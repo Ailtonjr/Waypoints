@@ -19,7 +19,12 @@
         <activity android:name=".ConfigActivity" />
         <activity android:name=".PrincipalActivity" />
         <activity android:name=".RotasActivity" />
-        <activity android:name=".SobreActivity"></activity>
+        <activity android:name=".SobreActivity" />
+        <activity android:name=".RecuperarActivity" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

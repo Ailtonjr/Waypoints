@@ -26,6 +26,11 @@
         <activity android:name="br.com.waypoints.waypoints.PrincipalActivity" />
         <activity android:name="br.com.waypoints.waypoints.RotasActivity" />
         <activity android:name="br.com.waypoints.waypoints.SobreActivity" />
+        <activity android:name="br.com.waypoints.waypoints.RecuperarActivity" />
+        <activity
+            android:name="br.com.waypoints.waypoints.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

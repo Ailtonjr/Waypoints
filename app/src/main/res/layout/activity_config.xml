@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/string_cadastronome"
+            android:text="@string/string_nome"
             android:id="@+id/textViewNomeConfig"
             android:layout_marginBottom="5dp" />
 
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/string_seuemail"
+            android:text="@string/string_email"
             android:id="@+id/textViewEmailConfig"
             android:layout_marginBottom="5dp" />
 
@@ -83,7 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/string_textfieldSenha"
+            android:text="@string/string_senha"
             android:id="@+id/textViewSenhaConfig"
             android:layout_marginBottom="5dp" />
 

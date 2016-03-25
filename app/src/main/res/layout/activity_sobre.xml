@@ -19,7 +19,7 @@
             android:layout_width="297dp"
             android:layout_height="170dp"
             android:id="@+id/imageView"
-            android:src="@drawable/logo_sem_fundo"
+            android:src="@drawable/waypoints_logo"
             android:background="@color/colorPrimary"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="5dp" />

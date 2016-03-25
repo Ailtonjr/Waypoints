@@ -29,7 +29,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="@string/string_cadastronome"
+                android:hint="@string/string_nome"
                 android:ems="10"
                 android:id="@+id/editTextNomeCadastro"
                 android:layout_marginLeft="7dp"
@@ -39,10 +39,18 @@
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editTextEmailCadastro"
+            android:hint="@string/string_email"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/editTextSenhaCadastro"
-            android:text="@string/string_textfieldSenha"
+            android:hint="@string/string_senha"
             android:layout_marginBottom="10dp" />
 
         <EditText
@@ -51,7 +59,7 @@
             android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/editTextConfirmaSenhaCadastro"
-            android:text="@string/string_confirmarSenha"
+            android:hint="@string/string_confirmarSenha"
             android:layout_marginBottom="10dp" />
 
         <TextView
@@ -69,19 +77,12 @@
             android:spinnerMode="dropdown"
             android:layout_marginBottom="10dp" />
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/string_datanasc"
-            android:id="@+id/textViewNascimentoCadastro"
-            android:layout_marginBottom="10dp" />
-
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:inputType="date"
             android:ems="10"
+            android:hint="@string/string_datanasc"
             android:id="@+id/editTextDataNascCadastro"
             android:layout_marginBottom="10dp" />
 

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml
@@ -14,13 +14,23 @@ ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:2:1-25:1
 		INJECTED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml
 		INJECTED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:5:5-23:19
+ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:5:5-28:19
 MERGED from [com.android.support:appcompat-v7:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:8:9-41
@@ -63,9 +73,21 @@ ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:21:9-51
 	android:name
 		ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:21:19-48
 activity#br.com.waypoints.waypoints.SobreActivity
-ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:22:9-60
+ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:22:9-51
 	android:name
 		ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:22:19-48
+activity#br.com.waypoints.waypoints.RecuperarActivity
+ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:23:9-55
+	android:name
+		ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:23:19-52
+activity#br.com.waypoints.waypoints.MenuActivity
+ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:24:9-27:68
+	android:label
+		ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:26:13-56
+	android:theme
+		ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:27:13-56
+	android:name
+		ADDED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml:25:13-41
 uses-sdk
 INJECTED from C:\sandboxandroid\Waypoints\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:21:5-23:78
@@ -74,6 +96,17 @@ MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\sandboxandr
 MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.2.1] C:\sandboxandroid\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:23:9-75

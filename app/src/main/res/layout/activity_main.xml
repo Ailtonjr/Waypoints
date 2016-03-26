@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.waypoints.waypoints.MainActivity"
-    android:background="#225060">
+    android:background="@color/colorPrimary">
 
     <LinearLayout
         android:orientation="vertical"
@@ -19,59 +19,62 @@
         android:weightSum="1">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="258dp"
-            android:id="@+id/imageView"
-            android:src="@drawable/logo_sem_fundo" />
+            android:layout_width="fill_parent"
+            android:layout_height="222dp"
+            android:id="@+id/imageViewLogoLogin"
+            android:src="@drawable/waypoints_logo"
+            android:layout_weight="0.16" />
 
         <EditText
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:inputType="textEmailAddress"
             android:ems="10"
-            android:id="@+id/editTextEmail"
+            android:id="@+id/editTextEmailLogin"
             android:autoText="false"
-            android:text="@string/string_botaologin"
+            android:hint="@string/string_email"
+            android:layout_marginBottom="10dp"
             android:backgroundTintMode="multiply"
-            android:layout_marginBottom="10dp" />
+            android:background="#ffffff"
+            android:layout_marginTop="15dp" />
 
         <EditText
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/editTextSenha"
-            android:text="@string/string_textfieldSenha"
-            android:layout_marginBottom="20dp" />
+            android:id="@+id/editTextSenhaLogin"
+            android:hint="@string/string_senha"
+            android:layout_marginBottom="10dp"
+            android:backgroundTintMode="multiply"
+            android:drawableTintMode="multiply"
+            android:background="#ffffff" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/string_botaologin"
-            android:id="@+id/buttonEntrar"
-            android:backgroundTint="#44849d"
+            android:text="@string/string_entrar"
+            android:id="@+id/buttonEntrarLogin"
+            android:backgroundTint="@color/colorPrimaryLight"
             android:textColor="#ffffff"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="5dp" />
+            android:layout_marginBottom="10dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/string_cadastro"
-            android:id="@+id/textViewCadastro"
+            android:id="@+id/textViewCadastroLogin"
             android:contextClickable="false"
-            android:textColor="#429dff"
-            android:textSize="15dp" />
+            android:textColor="@color/colorPrimaryLight"
+            android:layout_marginBottom="5dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/string_esquecisenha"
-            android:id="@+id/textViewEsqueciSenha"
-            android:textColor="#429dff"
-            android:textSize="15dp" />
-
+            android:id="@+id/textViewEsqueciSenhaLogin"
+            android:textColor="@color/colorPrimaryLight" />
     </LinearLayout>
 </RelativeLayout>

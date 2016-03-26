@@ -2,19 +2,22 @@
     <string name="app_name">Waypoints</string>
     <string name="string_cadastro">Cadastre-se</string>
     <string name="string_esquecisenha">Esqueci minha senha</string>
-    <string name="string_botaologin">Entrar</string>
-    <string name="string_textfieldEmail">Email</string>
-    <string name="string_textfieldSenha">Senha</string>
-    <string name="string_cadastronome">Nome</string>
-    <string name="string_seuemail">Email</string>
+    <string name="string_recuperaSenha">Recuperação de senha</string>
+    <string name="string_recuperaSenhaMensagem">Informe seu email para recuperar sua senha. Um email com uma nova senha será enviado. Você pode trocar sua senha no menu configurações.</string>
+    <string name="string_enviar">Enviar</string>
+    <string name="string_entrar">Entrar</string>
+    <string name="string_nome">Nome</string>
+    <string name="string_email">Email</string>
+    <string name="string_senha">Senha</string>
     <string name="string_confirmarSenha">Confirmar Senha</string>
     <string name="string_categoriaCNH">Categoria CNH</string>
     <string name="string_datanasc">Data Nasc.</string>
     <string name="string_sexo">Sexo</string>
     <string name="string_sexomasculino">Masculino</string>
     <string name="string_sexofeminino">Feminino</string>
-    <string name="string_notificacoes">Notificações</string>
+    <string name="string_notificacoes">Exibir notificações</string>
 
+    <string name="logo_waypoints">waypointsLogo</string>
 
 
     //Tela rotas
@@ -23,10 +26,18 @@
 
 
     //String Sobre
-    <string name="string_sobre">Sobre</string>
-    <string name="string_waypointsteam">Waypoints Team:</string>
-    <string name="string_ailton">Ailton Cardoso Júnior: Grande Mestre</string>
-    <string name="string_joao">João Felipe Gonçalves: Garoto programador</string>
-    <string name="string_guiga">Guilherme Gustavo Gohr: Telaboy</string>
-    <string name="string_romulo">Rômulo Goelzer Portolann: Master of SQL</string>
+    <string name="string_waypointsteam">Developer Team</string>
+    <string name="string_ailton">Ailton Cardoso Júnior</string>
+    <string name="string_guilherme">Guilherme Gustavo Gohr Darosci</string>
+    <string name="string_joao">João Felipe Gonçalves</string>
+    <string name="string_romulo">Rômulo Göelzer Portolann</string>
+    <string name="string_site">www.waypoints.com.br</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
 </resources>

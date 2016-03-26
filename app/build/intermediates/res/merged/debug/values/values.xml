@@ -34,12 +34,10 @@
     <color name="colorAmarelo">#ff9c08</color>
     <color name="colorPreta">#000000</color>
     <color name="colorPrimary">#225060</color>
-    <color name="colorPrimaryDark">#193c48</color>
-    <color name="colorVerde">#66c867</color>
-    <color name="colorVermelho">#d7534e</color>
-    <color name="colorPrimary">#225060</color>
     <color name="colorPrimaryDark">#173641</color>
     <color name="colorPrimaryLight">#44849d</color>
+    <color name="colorVerde">#66c867</color>
+    <color name="colorVermelho">#d7534e</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
     <color name="design_fab_shadow_start_color">#44000000</color>
@@ -316,6 +314,7 @@
     <string name="string_guilherme">Guilherme Gustavo Gohr Darosci</string>
     <string name="string_joao">João Felipe Gonçalves</string>
     <string name="string_nome">Nome</string>
+    <string name="string_nomedarota">Notificações</string>
     <string name="string_notificacoes">Exibir notificações</string>
     <string name="string_recuperaSenha">Recuperação de senha</string>
     <string name="string_recuperaSenhaMensagem">Informe seu email para recuperar sua senha. Um email com uma nova senha será enviado. Você pode trocar sua senha no menu configurações.</string>

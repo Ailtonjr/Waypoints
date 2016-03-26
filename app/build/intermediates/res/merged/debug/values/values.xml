@@ -31,8 +31,12 @@
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorAmarelo">#ff9c08</color>
+    <color name="colorPreta">#000000</color>
     <color name="colorPrimary">#225060</color>
     <color name="colorPrimaryDark">#193c48</color>
+    <color name="colorVerde">#66c867</color>
+    <color name="colorVermelho">#d7534e</color>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
@@ -232,6 +236,7 @@
     <string name="string_esquecisenha">Esqueci minha senha</string>
     <string name="string_guiga">Guilherme Gustavo Gohr: Telaboy</string>
     <string name="string_joao">João Felipe Gonçalves: Garoto programador</string>
+    <string name="string_nomedarota">Notificações</string>
     <string name="string_notificacoes">Notificações</string>
     <string name="string_romulo">Rômulo Goelzer Portolann: Master of SQL</string>
     <string name="string_seuemail">Email</string>

@@ -21,9 +21,13 @@
         <activity
             android:name=".CadastroActivity"
             android:label="@string/string_cadastro"/>
-        <activity android:name=".ConfigActivity" />
+        <activity
+            android:name=".ConfigActivity"
+            android:label="@string/string_configuracoes"/>
         <activity android:name=".RotasActivity" />
-        <activity android:name=".SobreActivity" />
+        <activity
+            android:name=".SobreActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".RecuperarActivity"
             android:label="@string/string_recuperaSenha"/>

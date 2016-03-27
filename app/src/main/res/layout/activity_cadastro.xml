@@ -9,103 +9,109 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.waypoints.waypoints.CadastroActivity">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollViewCadastro" >
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageButton
-                android:layout_width="64dp"
-                android:layout_height="61dp"
-                android:id="@+id/imageButtonCadastro"
-                android:src="@drawable/icone_carinha" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="64dp"
+                    android:layout_height="61dp"
+                    android:id="@+id/imageButtonCadastro"
+                    android:src="@drawable/icone_carinha" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/string_nome"
+                    android:ems="10"
+                    android:id="@+id/editTextNomeCadastro"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
 
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:hint="@string/string_nome"
+                android:inputType="textEmailAddress"
                 android:ems="10"
-                android:id="@+id/editTextNomeCadastro"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="10dp" />
-        </LinearLayout>
+                android:id="@+id/editTextEmailCadastro"
+                android:hint="@string/string_email"/>
 
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:ems="10"
-            android:id="@+id/editTextEmailCadastro"
-            android:hint="@string/string_email"/>
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/editTextSenhaCadastro"
-            android:hint="@string/string_senha"
-            android:layout_marginBottom="10dp" />
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/editTextConfirmaSenhaCadastro"
-            android:hint="@string/string_confirmarSenha"
-            android:layout_marginBottom="10dp" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/string_categoriaCNH"
-            android:id="@+id/textoCNHCadastro"
-            android:layout_marginBottom="10dp" />
-
-        <Spinner
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinnerCNHCadastro"
-            android:spinnerMode="dropdown"
-            android:layout_marginBottom="10dp"
-            android:entries="@array/spinnerCNH"/>
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:inputType="date"
-            android:ems="10"
-            android:hint="@string/string_datanasc"
-            android:id="@+id/editTextDataNascCadastro"
-            android:layout_marginBottom="10dp" />
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-
-            <RadioButton
-                android:layout_width="wrap_content"
+            <EditText
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/string_sexomasculino"
-                android:id="@+id/radioButtonMascCadastro" />
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editTextSenhaCadastro"
+                android:hint="@string/string_senha"
+                android:layout_marginBottom="10dp" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
+            <EditText
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/string_sexofeminino"
-                android:id="@+id/radioButtonFemCadastro" />
-        </LinearLayout>
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editTextConfirmaSenhaCadastro"
+                android:hint="@string/string_confirmarSenha"
+                android:layout_marginBottom="10dp" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/string_categoriaCNH"
+                android:id="@+id/textoCNHCadastro"
+                android:layout_marginBottom="10dp" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerCNHCadastro"
+                android:spinnerMode="dropdown"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/spinnerCNH" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:hint="@string/string_datanasc"
+                android:id="@+id/editTextDataNascCadastro"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_sexomasculino"
+                    android:id="@+id/radioButtonMascCadastro" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_sexofeminino"
+                    android:id="@+id/radioButtonFemCadastro" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

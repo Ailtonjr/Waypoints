@@ -27,7 +27,9 @@
         <activity
             android:name="br.com.waypoints.waypoints.CadastroActivity"
             android:label="@string/string_cadastro" />
-        <activity android:name="br.com.waypoints.waypoints.ConfigActivity" />
+        <activity
+            android:name="br.com.waypoints.waypoints.ConfigActivity"
+            android:label="@string/string_configuracoes" />
         <activity android:name="br.com.waypoints.waypoints.RotasActivity" />
         <activity android:name="br.com.waypoints.waypoints.SobreActivity" />
         <activity

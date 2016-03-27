@@ -3,7 +3,13 @@
     <string-array name="spinnerCNH">
         <item>@string/string_cata</item>
         <item>@string/string_catb</item>
+        <item>@string/string_catc</item>
+        <item>@string/string_catd</item>
+        <item>@string/string_cate</item>
         <item>@string/string_catab</item>
+        <item>@string/string_catac</item>
+        <item>@string/string_catad</item>
+        <item>@string/string_catae</item>
     </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -311,8 +317,15 @@
     <string name="string_cadastro">Cadastre-se</string>
     <string name="string_cata">A</string>
     <string name="string_catab">AB</string>
+    <string name="string_catac">AC</string>
+    <string name="string_catad">AD</string>
+    <string name="string_catae">AE</string>
     <string name="string_catb">B</string>
+    <string name="string_catc">C</string>
+    <string name="string_catd">D</string>
+    <string name="string_cate">E</string>
     <string name="string_categoriaCNH">Categoria CNH</string>
+    <string name="string_configuracoes">Configurações</string>
     <string name="string_confirmarSenha">Confirmar Senha</string>
     <string name="string_datanasc">Data Nasc.</string>
     <string name="string_email">Email</string>

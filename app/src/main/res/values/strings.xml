@@ -16,6 +16,11 @@
     <string name="string_confirmarSenha">Confirmar Senha</string>
     <string name="string_categoriaCNH">Categoria CNH</string>
     <string name="string_datanasc">Data Nasc.</string>
+    <string name="string_rotas">Rotas</string>
+    <string name="string_grupos">Grupos</string>
+    <string name="string_configuracoes">Configurações</string>
+    <string name="string_sobre">Sobre</string>
+    <string name="string_sair">Sair</string>
 
     // Login
     <string name="string_cadastro">Cadastre-se</string>
@@ -26,7 +31,13 @@
     // Cadastro CNH categorias
     <string name="string_cata">A</string>
     <string name="string_catb">B</string>
+    <string name="string_catc">C</string>
+    <string name="string_catd">D</string>
+    <string name="string_cate">E</string>
     <string name="string_catab">AB</string>
+    <string name="string_catac">AC</string>
+    <string name="string_catad">AD</string>
+    <string name="string_catae">AE</string>
 
     //Tela rotas
     <string name="string_nomedarota">Notificações</string>

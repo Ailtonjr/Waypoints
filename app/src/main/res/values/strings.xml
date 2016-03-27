@@ -1,31 +1,37 @@
 <resources>
     <string name="app_name">Waypoints</string>
-    <string name="string_cadastro">Cadastre-se</string>
-    <string name="string_esquecisenha">Esqueci minha senha</string>
-    <string name="string_recuperaSenha">Recuperação de senha</string>
-    <string name="string_recuperaSenhaMensagem">Informe seu email para recuperar sua senha. Um email com uma nova senha será enviado. Você pode trocar sua senha no menu configurações.</string>
+
+    // Botoes
     <string name="string_enviar">Enviar</string>
     <string name="string_entrar">Entrar</string>
+    <string name="string_sexo">Sexo</string>
+    <string name="string_sexomasculino">Masculino</string>
+    <string name="string_sexofeminino">Feminino</string>
+    <string name="string_notificacoes">Exibir notificações</string>
+
+    // Campos
     <string name="string_nome">Nome</string>
     <string name="string_email">Email</string>
     <string name="string_senha">Senha</string>
     <string name="string_confirmarSenha">Confirmar Senha</string>
     <string name="string_categoriaCNH">Categoria CNH</string>
     <string name="string_datanasc">Data Nasc.</string>
-    <string name="string_sexo">Sexo</string>
-    <string name="string_sexomasculino">Masculino</string>
-    <string name="string_sexofeminino">Feminino</string>
-    <string name="string_notificacoes">Exibir notificações</string>
 
-    <string name="logo_waypoints">waypointsLogo</string>
+    // Login
+    <string name="string_cadastro">Cadastre-se</string>
+    <string name="string_esquecisenha">Esqueci minha senha</string>
+    <string name="string_recuperaSenha">Recuperação de senha</string>
+    <string name="string_recuperaSenhaMensagem">Informe seu email para recuperar sua senha. Um email com uma nova senha será enviado. Você pode trocar sua senha no menu configurações.</string>
 
+    // Cadastro CNH categorias
+    <string name="string_cata">A</string>
+    <string name="string_catb">B</string>
+    <string name="string_catab">AB</string>
 
     //Tela rotas
-
     <string name="string_nomedarota">Notificações</string>
 
-
-    //String Sobre
+    // Sobre
     <string name="string_waypointsteam">Developer Team</string>
     <string name="string_ailton">Ailton Cardoso Júnior</string>
     <string name="string_guilherme">Guilherme Gustavo Gohr Darosci</string>
@@ -34,10 +40,12 @@
     <string name="string_site">www.waypoints.com.br</string>
     <string name="title_activity_menu">MenuActivity</string>
 
+    // Imagens (nome das imagens)
+    <string name="logo_waypoints">waypointsLogo</string>
+
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-
-
 </resources>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="spinnerCNH">
+        <item>@string/string_cata</item>
+        <item>@string/string_catb</item>
+        <item>@string/string_catab</item>
+    </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -304,6 +309,9 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="string_ailton">Ailton Cardoso Júnior</string>
     <string name="string_cadastro">Cadastre-se</string>
+    <string name="string_cata">A</string>
+    <string name="string_catab">AB</string>
+    <string name="string_catb">B</string>
     <string name="string_categoriaCNH">Categoria CNH</string>
     <string name="string_confirmarSenha">Confirmar Senha</string>
     <string name="string_datanasc">Data Nasc.</string>

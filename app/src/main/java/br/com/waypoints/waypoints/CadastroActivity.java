@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 
 public class CadastroActivity extends AppCompatActivity {
 
@@ -12,6 +13,7 @@ public class CadastroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
 
+        final Spinner cnh = (Spinner) findViewById(R.id.spinnerCNHCadastro);
         final RadioButton radioMasc = (RadioButton) findViewById(R.id.radioButtonMascCadastro);
         final RadioButton radioFem = (RadioButton) findViewById(R.id.radioButtonFemCadastro);
 

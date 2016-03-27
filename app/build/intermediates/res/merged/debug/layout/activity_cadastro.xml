@@ -75,7 +75,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/spinnerCNHCadastro"
             android:spinnerMode="dropdown"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="10dp"
+            android:entries="@array/spinnerCNH"/>
 
         <EditText
             android:layout_width="fill_parent"

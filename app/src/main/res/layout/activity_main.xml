@@ -36,7 +36,9 @@
             android:layout_marginBottom="10dp"
             android:backgroundTintMode="multiply"
             android:background="#ffffff"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
 
         <EditText
             android:layout_width="fill_parent"
@@ -48,7 +50,9 @@
             android:layout_marginBottom="10dp"
             android:backgroundTintMode="multiply"
             android:drawableTintMode="multiply"
-            android:background="#ffffff" />
+            android:background="#ffffff"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp" />
 
         <Button
             android:layout_width="fill_parent"

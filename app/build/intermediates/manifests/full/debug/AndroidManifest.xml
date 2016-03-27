@@ -14,7 +14,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="br.com.waypoints.waypoints.MainActivity" >
+        <activity
+            android:name="br.com.waypoints.waypoints.MainActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,7 +25,6 @@
         </activity>
         <activity android:name="br.com.waypoints.waypoints.CadastroActivity" />
         <activity android:name="br.com.waypoints.waypoints.ConfigActivity" />
-        <activity android:name="br.com.waypoints.waypoints.PrincipalActivity" />
         <activity android:name="br.com.waypoints.waypoints.RotasActivity" />
         <activity android:name="br.com.waypoints.waypoints.SobreActivity" />
         <activity android:name="br.com.waypoints.waypoints.RecuperarActivity" />

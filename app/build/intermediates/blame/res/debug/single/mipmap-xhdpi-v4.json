@@ -8,6 +8,10 @@
         "source": "C:\\Waypoints-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\sandboxandroid\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
         "source": "C:\\sandboxandroid\\Waypoints\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },

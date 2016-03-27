@@ -16,18 +16,23 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="br.com.waypoints.waypoints.MainActivity"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="br.com.waypoints.waypoints.CadastroActivity" />
+        <activity
+            android:name="br.com.waypoints.waypoints.CadastroActivity"
+            android:label="@string/string_cadastro" />
         <activity android:name="br.com.waypoints.waypoints.ConfigActivity" />
         <activity android:name="br.com.waypoints.waypoints.RotasActivity" />
         <activity android:name="br.com.waypoints.waypoints.SobreActivity" />
-        <activity android:name="br.com.waypoints.waypoints.RecuperarActivity" />
+        <activity
+            android:name="br.com.waypoints.waypoints.RecuperarActivity"
+            android:label="@string/string_recuperaSenha" />
         <activity
             android:name="br.com.waypoints.waypoints.MenuActivity"
             android:label="@string/title_activity_menu"

@@ -30,7 +30,7 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#487686</color>
     <color name="colorAmarelo">#ff9c08</color>
     <color name="colorPreta">#000000</color>
     <color name="colorPrimary">#225060</color>

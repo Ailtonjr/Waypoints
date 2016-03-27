@@ -10,18 +10,23 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CadastroActivity" />
+        <activity
+            android:name=".CadastroActivity"
+            android:label="@string/string_cadastro"/>
         <activity android:name=".ConfigActivity" />
         <activity android:name=".RotasActivity" />
         <activity android:name=".SobreActivity" />
-        <activity android:name=".RecuperarActivity" />
+        <activity
+            android:name=".RecuperarActivity"
+            android:label="@string/string_recuperaSenha"/>
         <activity
             android:name=".MenuActivity"
             android:label="@string/title_activity_menu"

@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final TextView cadastro = (TextView) findViewById(R.id.textViewCadastroLogin);
-        TextView recupera = (TextView) findViewById(R.id.textViewEsqueciSenhaLogin);
-
+        final TextView recupera = (TextView) findViewById(R.id.textViewEsqueciSenhaLogin);
 
         cadastro.setOnClickListener(new View.OnClickListener() {
             @Override

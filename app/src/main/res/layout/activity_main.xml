@@ -23,11 +23,12 @@
             android:layout_height="222dp"
             android:id="@+id/imageViewLogoLogin"
             android:src="@drawable/waypoints_logo"
-            android:layout_weight="0.16" />
+            android:layout_weight="0.16"
+            android:layout_marginTop="20dp" />
 
         <EditText
             android:layout_width="fill_parent"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:ems="10"
             android:id="@+id/editTextEmailLogin"
@@ -37,12 +38,11 @@
             android:backgroundTintMode="multiply"
             android:background="#ffffff"
             android:layout_marginTop="15dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp" />
+            android:padding="5dp" />
 
         <EditText
             android:layout_width="fill_parent"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/editTextSenhaLogin"
@@ -51,17 +51,16 @@
             android:backgroundTintMode="multiply"
             android:drawableTintMode="multiply"
             android:background="#ffffff"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp" />
+            android:padding="5dp" />
 
         <Button
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/string_entrar"
             android:id="@+id/buttonEntrarLogin"
             android:backgroundTint="@color/colorPrimaryLight"
             android:textColor="#ffffff"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="15dp" />
 
         <TextView
             android:layout_width="wrap_content"

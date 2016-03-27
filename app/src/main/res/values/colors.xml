@@ -3,7 +3,7 @@
     <color name="colorPrimary">#225060</color>
     <color name="colorPrimaryDark">#173641</color>
     <color name="colorPrimaryLight">#44849d</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#487686</color>   // Quando objeto e selecionado
     <color name="colorVerde">#66c867</color>
     <color name="colorAmarelo">#ff9c08</color>
     <color name="colorVermelho">#d7534e</color>

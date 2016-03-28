@@ -20,6 +20,10 @@
         "source": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
+        "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_info_details.png",
+        "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\src\\main\\res\\drawable\\ic_menu_info_details.png"
+    },
+    {
         "merged": "C:\\Users\\Ailton Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
         "source": "C:\\Users\\Ailton Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
@@ -48,16 +52,20 @@
         "source": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Ailton Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
         "source": "C:\\Users\\Ailton Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
+        "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
         "merged": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_directions.png",
+        "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\src\\main\\res\\drawable\\ic_menu_directions.png"
     },
     {
         "merged": "C:\\Waypoints-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
@@ -66,6 +74,10 @@
     {
         "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
         "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\perm_group_personal_info.png",
+        "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\src\\main\\res\\drawable\\perm_group_personal_info.png"
     },
     {
         "merged": "C:\\Users\\Ailton Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
@@ -132,12 +144,20 @@
         "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\src\\main\\res\\drawable\\icone_grupo.png"
     },
     {
+        "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_close_clear_cancel.png",
+        "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\src\\main\\res\\drawable\\ic_menu_close_clear_cancel.png"
+    },
+    {
         "merged": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
         "merged": "C:\\Users\\Ailton Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bgred.xml",
         "source": "C:\\Users\\Ailton Jr\\AndroidStudioProjects\\Waypoints\\app\\src\\main\\res\\drawable\\bgred.xml"
+    },
+    {
+        "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_manage.png",
+        "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\src\\main\\res\\drawable\\ic_menu_manage.png"
     },
     {
         "merged": "C:\\Waypoints-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
@@ -438,6 +458,10 @@
     {
         "merged": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_allfriends.png",
+        "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\src\\main\\res\\drawable\\ic_menu_allfriends.png"
     },
     {
         "merged": "C:\\Waypoints-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",

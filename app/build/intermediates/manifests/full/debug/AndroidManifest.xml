@@ -28,16 +28,22 @@
             android:name="br.com.waypoints.waypoints.CadastroActivity"
             android:label="@string/string_cadastro" />
         <activity
-            android:name="br.com.waypoints.waypoints.ConfigActivity"
-            android:label="@string/string_configuracoes" />
-        <activity android:name="br.com.waypoints.waypoints.RotasActivity" />
-        <activity android:name="br.com.waypoints.waypoints.SobreActivity" />
+            android:name="br.com.waypoints.waypoints.SobreActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="br.com.waypoints.waypoints.RecuperarActivity"
             android:label="@string/string_recuperaSenha" />
         <activity
-            android:name="br.com.waypoints.waypoints.MenuActivity"
-            android:label="@string/title_activity_menu"
+            android:name="br.com.waypoints.waypoints.RotasActivity"
+            android:label="@string/string_rotas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.waypoints.waypoints.GruposActivity"
+            android:label="@string/string_grupos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.waypoints.waypoints.ConfigActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 

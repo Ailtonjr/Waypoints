@@ -1,5 +1,6 @@
 package br.com.waypoints.waypoints;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,13 +14,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MenuActivity extends AppCompatActivity
+public class GruposActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_grupos);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -55,7 +56,7 @@ public class MenuActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu, menu);
+        getMenuInflater().inflate(R.menu.grupos, menu);
         return true;
     }
 
@@ -80,18 +81,22 @@ public class MenuActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        if (id == R.id.nav_rotas) {
+            Intent intentRotas = new Intent(GruposActivity.this, RotasActivity.class);
+            startActivity(intentRotas);
+        } else if (id == R.id.nav_grupos) {
+            Intent intentGrupos = new Intent(GruposActivity.this, GruposActivity.class);
+            startActivity(intentGrupos);
+        } else if (id == R.id.nav_configuracoes) {
+            Intent intentConfiguracoes = new Intent(GruposActivity.this, ConfigActivity.class);
+            startActivity(intentConfiguracoes);
+        } else if (id == R.id.nav_sobre) {
+            Intent intentSobre = new Intent(GruposActivity.this, SobreActivity.class);
+            startActivity(intentSobre);
+        } else if (id == R.id.nav_sair) {
+            Intent intentLogin = new Intent(GruposActivity.this, MainActivity.class);
+            startActivity(intentLogin);
+            // Aqui deletar HASH de sessão no app e no banco.
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

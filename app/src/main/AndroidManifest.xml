@@ -11,7 +11,7 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,20 +20,25 @@
         </activity>
         <activity
             android:name=".CadastroActivity"
-            android:label="@string/string_cadastro"/>
-        <activity
-            android:name=".ConfigActivity"
-            android:label="@string/string_configuracoes"/>
-        <activity android:name=".RotasActivity" />
+            android:label="@string/string_cadastro" />
         <activity
             android:name=".SobreActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".RecuperarActivity"
-            android:label="@string/string_recuperaSenha"/>
+            android:label="@string/string_recuperaSenha" />
         <activity
-            android:name=".MenuActivity"
-            android:label="@string/title_activity_menu"
+            android:name=".RotasActivity"
+            android:label="@string/string_rotas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GruposActivity"
+            android:label="@string/string_grupos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConfigActivity"
+            android:label="@string/string_configuracoes"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

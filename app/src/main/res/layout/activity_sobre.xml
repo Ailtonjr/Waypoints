@@ -13,16 +13,19 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:gravity="clip_horizontal|clip_vertical">
+        android:gravity="clip_horizontal|clip_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
 
         <ImageView
-            android:layout_width="297dp"
+            android:layout_width="fill_parent"
             android:layout_height="170dp"
             android:id="@+id/imageView"
             android:src="@drawable/waypoints_logo"
             android:background="@color/colorPrimary"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="5dp" />
+            android:layout_marginBottom="5dp"
+            android:contentDescription="waypointsLogoSobre" />
 
         <TextView
             android:layout_width="wrap_content"

@@ -70,7 +70,7 @@
             android:id="@+id/textViewCadastroLogin"
             android:contextClickable="false"
             android:textColor="@color/colorPrimaryLight"
-            android:layout_marginBottom="5dp" />
+            android:layout_marginBottom="7dp" />
 
         <TextView
             android:layout_width="wrap_content"

@@ -28,7 +28,7 @@
                     android:layout_width="64dp"
                     android:layout_height="61dp"
                     android:id="@+id/imageButtonCadastro"
-                    android:src="@drawable/icone_carinha" />
+                    android:src="@drawable/ic_person_black_24dp" />
 
                 <EditText
                     android:layout_width="fill_parent"

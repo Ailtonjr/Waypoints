@@ -22,6 +22,11 @@ public class RecuperarActivity extends AppCompatActivity {
 
                 Intent intentLogin = new Intent(RecuperarActivity.this, MainActivity.class);
                 startActivity(intentLogin);
+                try {
+                    this.finalize();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                }
             }
         });
     }

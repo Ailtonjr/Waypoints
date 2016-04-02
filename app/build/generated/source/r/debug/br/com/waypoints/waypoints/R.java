@@ -2318,21 +2318,16 @@ containing a value of this type.
         public static final int bgyellow=0x7f02004d;
         public static final int design_fab_background=0x7f02004e;
         public static final int design_snackbar_background=0x7f02004f;
-        public static final int ic_menu_allfriends=0x7f020050;
-        public static final int ic_menu_camera=0x7f020051;
+        public static final int ic_done_white_24dp=0x7f020050;
+        public static final int ic_menu_allfriends=0x7f020051;
         public static final int ic_menu_close_clear_cancel=0x7f020052;
         public static final int ic_menu_directions=0x7f020053;
-        public static final int ic_menu_gallery=0x7f020054;
-        public static final int ic_menu_info_details=0x7f020055;
-        public static final int ic_menu_manage=0x7f020056;
-        public static final int ic_menu_send=0x7f020057;
-        public static final int ic_menu_share=0x7f020058;
-        public static final int ic_menu_slideshow=0x7f020059;
-        public static final int icone_carinha=0x7f02005a;
-        public static final int notification_template_icon_bg=0x7f02005e;
-        public static final int perm_group_personal_info=0x7f02005b;
-        public static final int side_nav_bar=0x7f02005c;
-        public static final int waypoints_logo=0x7f02005d;
+        public static final int ic_menu_info_details=0x7f020054;
+        public static final int ic_menu_manage=0x7f020055;
+        public static final int ic_person_black_24dp=0x7f020056;
+        public static final int notification_template_icon_bg=0x7f020059;
+        public static final int side_nav_bar=0x7f020057;
+        public static final int waypoints_logo=0x7f020058;
     }
     public static final class id {
         public static final int action0=0x7f0d00a5;
@@ -2598,9 +2593,10 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int activity_menu_drawer=0x7f0e0000;
-        public static final int config=0x7f0e0001;
-        public static final int grupos=0x7f0e0002;
-        public static final int rotas=0x7f0e0003;
+        public static final int botao_ok=0x7f0e0001;
+        public static final int config=0x7f0e0002;
+        public static final int grupos=0x7f0e0003;
+        public static final int rotas=0x7f0e0004;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

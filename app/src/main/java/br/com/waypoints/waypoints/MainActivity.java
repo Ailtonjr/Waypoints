@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intentEntrar = new Intent(MainActivity.this, RotasActivity.class);
                 intentEntrar.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intentEntrar);
+                finish();   // Para impedir que apos logado volte a tela de login sem deslogar
             }
         });
 
@@ -54,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
         try {
             Bundle bundleParametros = getIntent().getExtras();
             editTextEmail.setText(bundleParametros.getString("email"));

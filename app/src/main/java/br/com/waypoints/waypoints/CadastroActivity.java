@@ -46,7 +46,8 @@ public class CadastroActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_mode_close_button) {
             Intent intentLogin = new Intent(CadastroActivity.this, MainActivity.class);
-            intentLogin.putExtra("email", email.getText().toString());         // Envia campo email por parametro para MainActivity
+            intentLogin.putExtra("email", email.getText().toString()); // Envia campo email por parametro para MainActivity
+            intentLogin.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intentLogin);
             return true;
         }

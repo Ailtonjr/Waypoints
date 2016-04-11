@@ -84,18 +84,23 @@ public class ConfigActivity extends AppCompatActivity
         if (id == R.id.nav_rotas) {
             Intent intentRotas = new Intent(ConfigActivity.this, RotasActivity.class);
             startActivity(intentRotas);
+            finish();
         } else if (id == R.id.nav_grupos) {
             Intent intentGrupos = new Intent(ConfigActivity.this, GruposActivity.class);
             startActivity(intentGrupos);
+            finish();
         } else if (id == R.id.nav_configuracoes) {
             Intent intentConfiguracoes = new Intent(ConfigActivity.this, ConfigActivity.class);
             startActivity(intentConfiguracoes);
+            finish();
         } else if (id == R.id.nav_sobre) {
             Intent intentSobre = new Intent(ConfigActivity.this, SobreActivity.class);
             startActivity(intentSobre);
+            finish();
         } else if (id == R.id.nav_sair) {
             Intent intentLogin = new Intent(ConfigActivity.this, MainActivity.class);
             startActivity(intentLogin);
+            finish();
             // Aqui deletar HASH de sessão no app e no banco.
         }
 

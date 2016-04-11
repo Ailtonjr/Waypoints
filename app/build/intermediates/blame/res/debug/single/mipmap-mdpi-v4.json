@@ -16,6 +16,10 @@
         "source": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "F:\\AndroidSDK\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "F:\\AndroidSDK\\AndroidStudioProjects\\Waypoints\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\Ailton Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\Ailton Jr\\AndroidStudioProjects\\Waypoints\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }

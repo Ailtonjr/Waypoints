@@ -83,10 +83,14 @@ public class GruposActivity extends AppCompatActivity
 
         if (id == R.id.nav_rotas) {
             Intent intentRotas = new Intent(GruposActivity.this, RotasActivity.class);
+            intentRotas.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intentRotas);
+            finish();
         } else if (id == R.id.nav_grupos) {
             Intent intentGrupos = new Intent(GruposActivity.this, GruposActivity.class);
+            intentGrupos.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intentGrupos);
+            finish();
         } else if (id == R.id.nav_configuracoes) {
             Intent intentConfiguracoes = new Intent(GruposActivity.this, ConfigActivity.class);
             startActivity(intentConfiguracoes);

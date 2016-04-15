@@ -324,8 +324,10 @@
     <string name="string_datanasc">Data Nasc.</string>
     <string name="string_email">Email</string>
     <string name="string_entrar">Entrar</string>
+    <string name="string_entregador">Entregador</string>
     <string name="string_enviar">Enviar</string>
     <string name="string_esquecisenha">Esqueci minha senha</string>
+    <string name="string_grupo">Grupo</string>
     <string name="string_grupos">Grupos</string>
     <string name="string_guilherme">Guilherme Gustavo Gohr Darosci</string>
     <string name="string_joao">João Felipe Gonçalves</string>

@@ -60,7 +60,8 @@
             android:id="@+id/buttonEntrarLogin"
             android:backgroundTint="@color/colorPrimaryLight"
             android:textColor="#ffffff"
-            android:layout_marginBottom="15dp" />
+            android:layout_marginBottom="15dp"
+            android:textSize="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -70,7 +71,8 @@
             android:id="@+id/textViewCadastroLogin"
             android:contextClickable="false"
             android:textColor="@color/colorPrimaryLight"
-            android:layout_marginBottom="7dp" />
+            android:layout_marginBottom="7dp"
+            android:textSize="18dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -78,6 +80,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/string_esquecisenha"
             android:id="@+id/textViewEsqueciSenhaLogin"
-            android:textColor="@color/colorPrimaryLight" />
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18dp" />
     </LinearLayout>
 </RelativeLayout>

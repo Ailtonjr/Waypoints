@@ -18,6 +18,8 @@
     <string name="string_datanasc">Data Nasc.</string>
     <string name="string_rotas">Rotas</string>
     <string name="string_grupos">Grupos</string>
+    <string name="string_grupo">Grupo</string>
+    <string name="string_entregador">Entregador</string>
     <string name="string_configuracoes">Configurações</string>
     <string name="string_sobre">Sobre</string>
     <string name="string_sair">Sair</string>

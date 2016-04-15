@@ -39,7 +39,9 @@
         <activity
             android:name=".ConfigActivity"
             android:label="@string/string_configuracoes"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".NovaRotaActivity" />
+        <activity android:name=".AdicionaPontoActivity"></activity>
     </application>
 
 </manifest>

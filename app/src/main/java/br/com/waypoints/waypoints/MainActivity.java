@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intentEntrar = new Intent(MainActivity.this, RotasActivity.class);
-                intentEntrar.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intentEntrar.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intentEntrar);
                 finish();   // Para impedir que apos logado volte a tela de login sem deslogar
             }

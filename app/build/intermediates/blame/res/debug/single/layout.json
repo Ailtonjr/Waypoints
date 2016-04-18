@@ -12,12 +12,12 @@
         "source": "F:\\AndroidSDK\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_config.xml",
-        "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\src\\main\\res\\layout\\activity_config.xml"
-    },
-    {
         "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_nova_rota.xml",
         "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\src\\main\\res\\layout\\activity_nova_rota.xml"
+    },
+    {
+        "merged": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_config.xml",
+        "source": "C:\\AndroidSDK\\Android_projects\\Waypoints\\app\\src\\main\\res\\layout\\activity_config.xml"
     },
     {
         "merged": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
@@ -56,12 +56,12 @@
         "source": "C:\\Waypoints-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
         "merged": "D:\\Documentos\\novo\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
         "source": "D:\\Documentos\\novo\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Ailton Cardoso Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "F:\\AndroidSDK\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest
 		INJECTED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml
 		INJECTED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml:5:5-45:19
+ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml:5:5-46:19
 MERGED from [com.android.support:appcompat-v7:23.2.1] C:\AndroidSDK\Android_projects\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:23.2.1] C:\AndroidSDK\Android_projects\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\AndroidSDK\Android_projects\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
@@ -111,9 +111,13 @@ ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest
 	android:name
 		ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml:43:19-51
 activity#br.com.waypoints.waypoints.AdicionaPontoActivity
-ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml:44:9-68
+ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml:44:9-59
 	android:name
 		ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml:44:19-56
+activity#br.com.waypoints.waypoints.AdicionaGrupoActivity
+ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml:45:9-68
+	android:name
+		ADDED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml:45:19-56
 uses-sdk
 INJECTED from C:\AndroidSDK\Android_projects\Waypoints\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.2.1] C:\AndroidSDK\Android_projects\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:21:5-23:78

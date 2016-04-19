@@ -27,7 +27,7 @@ public class NovaRotaActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_mode_close_button) {
-            Intent intentPontos = new Intent(CadastroActivity.this, MainActivity.class);
+            Intent intentPontos = new Intent(NovaRotaActivity.this, MainActivity.class);
             intentPontos.putExtra("nome", editTextNome.getText());
             intentPontos.putExtra("grupo", spinnerGrupo.getSelectedItem().toString()); // verificar se e assim que pega o nome
             intentPontos.putExtra("entregador", spinnerEntregador.getSelectedItem().toString()); // verificar se e assim que pega o nome

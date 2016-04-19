@@ -41,7 +41,8 @@
             android:label="@string/string_configuracoes"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".NovaRotaActivity" />
-        <activity android:name=".AdicionaPontoActivity"></activity>
+        <activity android:name=".AdicionaPontoActivity" />
+        <activity android:name=".AdicionaGrupoActivity"></activity>
     </application>
 
 </manifest>

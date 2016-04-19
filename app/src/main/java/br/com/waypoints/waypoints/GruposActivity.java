@@ -41,6 +41,14 @@ public class GruposActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentNovoGrupo = new Intent(GruposActivity.this, AdicionaGrupoActivity.class);
+                startActivity(intentNovoGrupo);
+            }
+        });
     }
 
     @Override
@@ -51,13 +59,6 @@ public class GruposActivity extends AppCompatActivity
         } else {
             super.onBackPressed();
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.grupos, menu);
-        return true;
     }
 
     @Override

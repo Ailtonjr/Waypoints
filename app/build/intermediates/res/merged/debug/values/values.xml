@@ -334,6 +334,8 @@
     <string name="string_nome">Nome</string>
     <string name="string_nomedarota">Notificações</string>
     <string name="string_notificacoes">Exibir notificações</string>
+    <string name="string_planejador">Planejador</string>
+    <string name="string_ramo">Ramo</string>
     <string name="string_recuperaSenha">Recuperação de senha</string>
     <string name="string_recuperaSenhaMensagem">Informe seu email para recuperar sua senha. Um email com uma nova senha será enviado. Você pode trocar sua senha no menu configurações.</string>
     <string name="string_romulo">Rômulo Göelzer Portolann</string>

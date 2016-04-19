@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPostalAddress"
             android:ems="10"
-            android:id="@+id/editText" />
+            android:id="@+id/editTextAdicionar" />
 
         <Button
             android:layout_width="fill_parent"

@@ -19,6 +19,8 @@
     <string name="string_rotas">Rotas</string>
     <string name="string_grupos">Grupos</string>
     <string name="string_grupo">Grupo</string>
+    <string name="string_ramo">Ramo</string>
+    <string name="string_planejador">Planejador</string>
     <string name="string_entregador">Entregador</string>
     <string name="string_configuracoes">Configurações</string>
     <string name="string_sobre">Sobre</string>

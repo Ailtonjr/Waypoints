@@ -28,12 +28,12 @@
         "source": "D:\\Documentos\\Workspace\\Waypoints\\app\\src\\main\\res\\layout\\activity_rotas.xml"
     },
     {
-        "merged": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
         "merged": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_item.xml",
@@ -124,12 +124,12 @@
         "source": "D:\\Documentos\\Workspace\\Waypoints\\app\\src\\main\\res\\layout\\activity_grupos.xml"
     },
     {
-        "merged": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_cadastro.xml",
-        "source": "D:\\Documentos\\Workspace\\Waypoints\\app\\src\\main\\res\\layout\\activity_cadastro.xml"
-    },
-    {
         "merged": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_cadastro.xml",
+        "source": "D:\\Documentos\\Workspace\\Waypoints\\app\\src\\main\\res\\layout\\activity_cadastro.xml"
     },
     {
         "merged": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",

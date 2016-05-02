@@ -1,25 +1,18 @@
 package br.com.waypoints.entity;
 
-import java.util.Date;
+public class Usuario{
+	private int id;
+	String nome;
+	String email;
+	String senha;
+	String categoriaCNH;
+	String sexo;
 
-
-public class Usuario {
-
-	public enum Sexo {M, F};
-	
-	private Long id;
-	private String nome;
-	private String email;
-	private String senha;
-	private String categoriaCNH;
-	private Date dataNascimento;
-	private Sexo sexo;
-
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -27,8 +20,8 @@ public class Usuario {
 		return nome;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNome(String name) {
+		this.nome = name;
 	}
 
 	public String getEmail() {
@@ -55,19 +48,11 @@ public class Usuario {
 		this.categoriaCNH = categoriaCNH;
 	}
 
-	public Date getDataNascimento() {
-		return dataNascimento;
-	}
-
-	public void setDataNascimento(Date dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
-
-	public Sexo getSexo() {
+	public String getSexo() {
 		return sexo;
 	}
 
-	public void setSexo(Sexo sexo) {
+	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
 }

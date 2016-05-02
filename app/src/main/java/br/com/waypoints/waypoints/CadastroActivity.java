@@ -41,11 +41,11 @@ public class CadastroActivity extends AppCompatActivity {
         radioMasc = (RadioButton) findViewById(R.id.radioButtonMascCadastro);
         radioFem = (RadioButton) findViewById(R.id.radioButtonFemCadastro);
 
-        nome.setText("testes");
-        email.setText("testes@gmail.com");
-        senha.setText("teste");
-        confirmaSenha.setText("teste123");
-        cnh.setSelection(6);
+        //nome.setText("testes");
+        //email.setText("testes@gmail.com");
+        //senha.setText("teste");
+        //confirmaSenha.setText("teste123");
+        //cnh.setSelection(6);
 
 
         usuarioController = new UsuarioController();

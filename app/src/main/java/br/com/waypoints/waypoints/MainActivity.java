@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         cadastro = (TextView) findViewById(R.id.textViewCadastroLogin);
         recupera = (TextView) findViewById(R.id.textViewEsqueciSenhaLogin);
 
-        editTextEmail.setText("romulogoelzer@gmail.com");
-        editTextSenha.setText("teste");
+        //editTextEmail.setText("romulogoelzer@gmail.com");
+        //editTextSenha.setText("teste");
 
 
         usuarioController = new UsuarioController();

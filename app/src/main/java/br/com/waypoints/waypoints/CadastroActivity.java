@@ -44,7 +44,7 @@ public class CadastroActivity extends AppCompatActivity {
         nome.setText("testes");
         email.setText("testes@gmail.com");
         senha.setText("teste");
-        confirmaSenha.setText("teste");
+        confirmaSenha.setText("teste123");
         cnh.setSelection(6);
 
 

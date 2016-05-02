@@ -1,5 +1,6 @@
 package br.com.waypoints.waypoints;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -17,12 +18,12 @@ import br.com.waypoints.network.CustomVolleyRequestQueue;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String REQUEST_TAG = "Login";
     private EditText editTextEmail;
     private EditText editTextSenha;
     private Button botaoEntrar;
     private TextView cadastro;
     private TextView recupera;
+
 
     private UsuarioController usuarioController;
 
@@ -45,13 +46,20 @@ public class MainActivity extends AppCompatActivity {
         botaoEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ProgressDialog pDialog = new ProgressDialog(v.getContext());
                 try {
+                    pDialog.setMessage("Loading...");
+                    pDialog.show();
                     usuarioController.login(v, editTextEmail.getText().toString(), editTextSenha.getText().toString());
+// Esse trexo de codigo foi movido para a classe UsuarioService, sera executado quando for aceito o login
+
+
 //                    Intent intentEntrar = new Intent(MainActivity.this, RotasActivity.class);
 //                    intentEntrar.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
 //                    startActivity(intentEntrar);
 //                    finish();   // Para impedir que apos logado volte a tela de login sem deslogar
                 } catch (BusinessException e) {
+                    pDialog.hide();
                     Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
                     e.printStackTrace();
                 }
@@ -78,12 +86,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        try {
+        /*try {
             Bundle bundleParametros = getIntent().getExtras();
             editTextEmail.setText(bundleParametros.getString("email"));
         } catch (Exception ex) {
             ex.printStackTrace();
-        }
+        }*/
     }
 
     @Override
@@ -96,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     public void onStop(){
         super.onStop();
         RequestQueue queue = CustomVolleyRequestQueue.getInstance(this.getApplicationContext()).getRequestQueue();
-        queue.cancelAll(REQUEST_TAG);
+        queue.cancelAll("Login");
     }
 
 }

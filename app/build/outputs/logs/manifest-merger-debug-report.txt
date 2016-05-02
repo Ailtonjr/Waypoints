@@ -19,25 +19,25 @@ ADDED from D:\Documentos\Workspace\Waypoints\app\src\main\AndroidManifest.xml:5:
 		ADDED from D:\Documentos\Workspace\Waypoints\app\src\main\AndroidManifest.xml:5:22-64
 application
 ADDED from D:\Documentos\Workspace\Waypoints\app\src\main\AndroidManifest.xml:7:5-45:19
-MERGED from [com.android.support:appcompat-v7:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.volley:volley:unspecified] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.volley\volley\unspecified\AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from D:\Documentos\Workspace\Waypoints\app\src\main\AndroidManifest.xml:10:9-41
@@ -113,30 +113,30 @@ ADDED from D:\Documentos\Workspace\Waypoints\app\src\main\AndroidManifest.xml:41
 		ADDED from D:\Documentos\Workspace\Waypoints\app\src\main\AndroidManifest.xml:42:13-43
 uses-sdk
 INJECTED from D:\Documentos\Workspace\Waypoints\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.volley:volley:unspecified] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.volley\volley\unspecified\AndroidManifest.xml:7:5-43
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.2.1] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:23.3.0] D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from D:\Documentos\Workspace\Waypoints\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Documentos\Workspace\Waypoints\app\src\main\AndroidManifest.xml

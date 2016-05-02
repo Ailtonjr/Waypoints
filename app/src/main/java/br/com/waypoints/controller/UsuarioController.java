@@ -28,4 +28,20 @@ public class UsuarioController {
             Log.e("Log", e.getMessage());
         }
     }
+
+
+    public void cadastro(View v, String nome, String email, String senha, String cnh, String sexo) throws BusinessException {
+
+        JSONObject jsonData = new JSONObject();
+        try {
+            jsonData.put("nome", nome);
+            jsonData.put("email", email);
+            jsonData.put("senha", senha);
+            jsonData.put("categoriaCNH", cnh);
+            jsonData.put("sexo", sexo);
+            usuarioFA.cadastro(v, jsonData);
+        } catch (JSONException e) {
+            Log.e("Log", e.getMessage());
+        }
+    }
 }

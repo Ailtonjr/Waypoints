@@ -16,7 +16,8 @@ public class UsuarioFA {
 
 
 
-	UsuarioService usuarioService;
+	private UsuarioService usuarioService;
+	private final int TAM_MIN_SENHA = 8;
 
 	public UsuarioFA() {
 		usuarioService = new UsuarioService();
@@ -34,9 +35,42 @@ public class UsuarioFA {
 		return usuarioService.doLogin(v, jsonUsuario);
 	}
 
-	public Usuario cadastro(Usuario usuario) {
+	public Usuario cadastro(View v, JSONObject jsonUsuario) throws BusinessException {
 
-		return null;
+		try {
+			validaUsuario(jsonUsuario);
+		} catch (BusinessException be) {
+			throw new BusinessException(be.getMessage());
+		}
+		return usuarioService.cadastrar(v, jsonUsuario);
 	}
-	
+
+	private void validaUsuario(JSONObject usuario) throws BusinessException {
+		try {
+			if (usuario.get("nome") == null || usuario.get("nome").toString().isEmpty()) {
+                throw new BusinessException("O nome informado é inválido.");
+            }
+			if ((usuario.get("email") == null)
+					|| (usuario.get("email").toString().isEmpty())
+					|| (!EmailUtil.isValid(usuario.get("email").toString()))) {
+				throw new BusinessException("O email informado é inválido.");
+			}
+			if ((usuario.get("senha") == null) || (usuario.get("senha").toString().isEmpty())) {
+				throw new BusinessException("A senha informada é inválida.");
+			}
+			if (usuario.get("senha").toString().length() < TAM_MIN_SENHA) {
+				throw new BusinessException("A senha deve ter pelo menos \"" + TAM_MIN_SENHA + "\" caracteres.");
+			}
+
+//			if (usuarioDAO.getByEmail(usuario.getEmail()) != null) {
+//				throw new BusinessException("Este e-mail já está cadastrado.");
+//			}
+			if (usuario.get("sexo") == null) {
+				throw new BusinessException("O sexo deve ser selecionado.");
+			}
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+
+	}
 }

@@ -1,6 +1,7 @@
 package br.com.waypoints.model;
 
 
+import android.app.ProgressDialog;
 import android.view.View;
 
 import org.json.JSONException;
@@ -35,14 +36,14 @@ public class UsuarioFA {
 		return usuarioService.doLogin(v, jsonUsuario);
 	}
 
-	public Usuario cadastro(View v, JSONObject jsonUsuario) throws BusinessException {
+	public Usuario cadastro(View v, ProgressDialog pDialog , JSONObject jsonUsuario) throws BusinessException {
 
 		try {
 			validaUsuario(jsonUsuario);
 		} catch (BusinessException be) {
 			throw new BusinessException(be.getMessage());
 		}
-		return usuarioService.cadastrar(v, jsonUsuario);
+		return usuarioService.cadastrar(v, pDialog, jsonUsuario);
 	}
 
 	private void validaUsuario(JSONObject usuario) throws BusinessException {

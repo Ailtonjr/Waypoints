@@ -1,5 +1,6 @@
 package br.com.waypoints.controller;
 
+import android.app.ProgressDialog;
 import android.util.Log;
 import android.view.View;
 
@@ -30,7 +31,7 @@ public class UsuarioController {
     }
 
 
-    public void cadastro(View v, String nome, String email, String senha, String cnh, String sexo) throws BusinessException {
+    public void cadastro(View v,ProgressDialog pDialog , String nome, String email, String senha, String cnh, String sexo) throws BusinessException {
 
         JSONObject jsonData = new JSONObject();
         try {
@@ -39,7 +40,7 @@ public class UsuarioController {
             jsonData.put("senha", senha);
             jsonData.put("categoriaCNH", cnh);
             jsonData.put("sexo", sexo);
-            usuarioFA.cadastro(v, jsonData);
+            usuarioFA.cadastro(v, pDialog, jsonData);
         } catch (JSONException e) {
             Log.e("Log", e.getMessage());
         }

@@ -1,5 +1,6 @@
 package br.com.waypoints.service;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.util.Log;
 import android.view.View;
@@ -17,6 +18,7 @@ import br.com.waypoints.exeption.BusinessException;
 import br.com.waypoints.network.CustomJSONObjectRequest;
 import br.com.waypoints.network.CustomVolleyRequestQueue;
 import br.com.waypoints.util.ParseJSON;
+import br.com.waypoints.waypoints.MainActivity;
 import br.com.waypoints.waypoints.RotasActivity;
 
 public class UsuarioService {
@@ -83,7 +85,7 @@ public class UsuarioService {
     }
 
 
-    public Usuario cadastrar(final View v, JSONObject usuarioJSON) throws BusinessException {
+    public Usuario cadastrar(final View v, final ProgressDialog pDialog, JSONObject usuarioJSON) throws BusinessException {
         String url ="http://gmuh.dyndns.info:3000/waypoints-ws/recursos/usuario/cadastro";
 
         final CustomJSONObjectRequest jsObjRequest = new CustomJSONObjectRequest(Request.Method
@@ -93,9 +95,12 @@ public class UsuarioService {
             public void onResponse(JSONObject response) {
                 Toast.makeText(v.getContext(), "Cadastro efetuado com sucesso", Toast.LENGTH_LONG).show();
                 usuario = parseJSON.loadUserFromJSON(response.toString());
-                Intent intentEntrar = new Intent(v.getContext(), RotasActivity.class);
-                intentEntrar.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                v.getContext().startActivity(intentEntrar);
+                //Intent intentEntrar = new Intent(v.getContext(), RotasActivity.class);
+
+                Intent intentLogin = new Intent(v.getContext(), MainActivity.class);
+                intentLogin.putExtra("email", usuario.getEmail()); // Envia campo email por parametro para MainActivity
+                intentLogin.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                v.getContext().startActivity(intentLogin);
 
             }
         }, new Response.ErrorListener() {
@@ -112,14 +117,14 @@ public class UsuarioService {
                     case 404:
                     case 406:
 
-                        Toast.makeText(v.getContext(), "Usuario ou senha não confere", Toast.LENGTH_LONG).show();
+                        Toast.makeText(v.getContext(), "E-mail já está cadastrado.", Toast.LENGTH_LONG).show();
                         break;
                     case 500:
                     case 0:
                         Toast.makeText(v.getContext(), "Servidor Offline", Toast.LENGTH_LONG).show();
                         break;
                 }
-
+                pDialog.hide();
                 Log.i("Log", "Erro " + statusCode);
             }
 

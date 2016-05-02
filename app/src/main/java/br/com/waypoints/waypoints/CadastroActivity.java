@@ -70,13 +70,14 @@ public class CadastroActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_mode_close_button) {
-            ProgressDialog pDialog = new ProgressDialog(view.getContext());
             if(sexo() != null) {
+                ProgressDialog pDialog = new ProgressDialog(view.getContext());
                 if (senha.getText().toString().equals(confirmaSenha.getText().toString())) {
                     try {
                         pDialog.setMessage("Loading...");
                         pDialog.show();
                         usuarioController.cadastro(view,
+                                pDialog,
                                 nome.getText().toString(),
                                 email.getText().toString(),
                                 senha.getText().toString(),
@@ -92,13 +93,8 @@ public class CadastroActivity extends AppCompatActivity {
                     Toast.makeText(view.getContext(), "Senhas não conferem", Toast.LENGTH_LONG).show();
                 }
             }else{
-                Toast.makeText(view.getContext(), "Deve selecionar o Sexo", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Deve selecionar o Sexo", Toast.LENGTH_LONG).show();
             }
-
-            //Intent intentLogin = new Intent(CadastroActivity.this, MainActivity.class);
-            //intentLogin.putExtra("email", email.getText().toString()); // Envia campo email por parametro para MainActivity
-            //intentLogin.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            //startActivity(intentLogin);
 
             return true;
         }

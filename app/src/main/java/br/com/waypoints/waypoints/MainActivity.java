@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         cadastro = (TextView) findViewById(R.id.textViewCadastroLogin);
         recupera = (TextView) findViewById(R.id.textViewEsqueciSenhaLogin);
 
-        editTextEmail.setText("romulogoelzer@gmail.com");
-        editTextSenha.setText("teste");
+        //editTextEmail.setText("romulogoelzer@gmail.com");
+        //editTextSenha.setText("teste");
 
 
         usuarioController = new UsuarioController();
@@ -86,12 +86,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        /*try {
-            Bundle bundleParametros = getIntent().getExtras();
-            editTextEmail.setText(bundleParametros.getString("email"));
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }*/
+
+            try {
+                if(getIntent().getExtras().getString("email") != null) {
+                    Bundle bundleParametros = getIntent().getExtras();
+                    editTextEmail.setText(bundleParametros.getString("email"));
+                }
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+
     }
 
     @Override

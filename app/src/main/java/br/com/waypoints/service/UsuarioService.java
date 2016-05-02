@@ -99,6 +99,7 @@ public class UsuarioService {
 
                 Intent intentLogin = new Intent(v.getContext(), MainActivity.class);
                 intentLogin.putExtra("email", usuario.getEmail()); // Envia campo email por parametro para MainActivity
+
                 intentLogin.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 v.getContext().startActivity(intentLogin);
 

@@ -46,6 +46,9 @@
             android:name="br.com.waypoints.waypoints.ConfigActivity"
             android:label="@string/string_configuracoes"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="br.com.waypoints.waypoints.NovaRotaActivity" />
+        <activity android:name="br.com.waypoints.waypoints.AdicionaPontoActivity" />
+        <activity android:name="br.com.waypoints.waypoints.AdicionaGrupoActivity" />
     </application>
 
 </manifest>

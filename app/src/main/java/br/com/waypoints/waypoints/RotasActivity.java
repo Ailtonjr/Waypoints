@@ -41,6 +41,14 @@ public class RotasActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentNovaRota = new Intent(RotasActivity.this, NovaRotaActivity.class);
+                startActivity(intentNovaRota);
+            }
+        });
     }
 
     @Override
@@ -51,13 +59,6 @@ public class RotasActivity extends AppCompatActivity
         } else {
             super.onBackPressed();
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.rotas, menu);
-        return true;
     }
 
     @Override
@@ -83,10 +84,14 @@ public class RotasActivity extends AppCompatActivity
 
         if (id == R.id.nav_rotas) {
             Intent intentRotas = new Intent(RotasActivity.this, RotasActivity.class);
+            intentRotas.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intentRotas);
+            finish();
         } else if (id == R.id.nav_grupos) {
             Intent intentGrupos = new Intent(RotasActivity.this, GruposActivity.class);
+            intentGrupos.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intentGrupos);
+            finish();
         } else if (id == R.id.nav_configuracoes) {
             Intent intentConfiguracoes = new Intent(RotasActivity.this, ConfigActivity.class);
             startActivity(intentConfiguracoes);

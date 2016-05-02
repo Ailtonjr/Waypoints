@@ -83,10 +83,12 @@ public class ConfigActivity extends AppCompatActivity
 
         if (id == R.id.nav_rotas) {
             Intent intentRotas = new Intent(ConfigActivity.this, RotasActivity.class);
+            intentRotas.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intentRotas);
             finish();
         } else if (id == R.id.nav_grupos) {
             Intent intentGrupos = new Intent(ConfigActivity.this, GruposActivity.class);
+            intentGrupos.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intentGrupos);
             finish();
         } else if (id == R.id.nav_configuracoes) {

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:2:1-45:12
+ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest
 		INJECTED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:5:5-43:19
+ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:5:5-46:19
 MERGED from [com.android.support:appcompat-v7:23.2.1] D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:23.2.1] D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
@@ -99,13 +99,25 @@ ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest
 	android:name
 		ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:36:13-43
 activity#br.com.waypoints.waypoints.ConfigActivity
-ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:39:9-42:68
+ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:39:9-42:59
 	android:label
 		ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:41:13-57
 	android:theme
 		ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:42:13-56
 	android:name
 		ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:40:13-43
+activity#br.com.waypoints.waypoints.NovaRotaActivity
+ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:43:9-54
+	android:name
+		ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:43:19-51
+activity#br.com.waypoints.waypoints.AdicionaPontoActivity
+ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:44:9-59
+	android:name
+		ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:44:19-56
+activity#br.com.waypoints.waypoints.AdicionaGrupoActivity
+ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:45:9-68
+	android:name
+		ADDED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml:45:19-56
 uses-sdk
 INJECTED from D:\Documentos\Workspace\Merge2\Waypoints\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.2.1] D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:21:5-23:78

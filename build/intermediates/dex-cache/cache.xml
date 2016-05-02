@@ -1,3 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.2.1_96c9018a1c36bc2b57e51f1745036293c11d8d06\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.2.1_7597e94700f2626bc56581303effa1b115dafe21\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.2.1_a2cd7f7fbe0e0ce2220f13ff92acfea0491ce92d\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.2.1_7ffbe6520748d79b94a2995c60ad6da16c47e77e\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.2.1_bcd679abe573a8358a247216298326c443dad81d\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.2.1_e9a14eedbf90880ec28dc44751d60f02de81108a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.2.1_a56e9dd4c90bf7079c075061d78cff57c1577e98\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.2.1_2d2bf0a946e7ac60e8185b0ae82617bf61cb494c\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6a7ef0d1f220e45b371f6453578aad765785c306">
+        <dex dex="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0263d49a38140a30308725cbfaa6156eb2721dfe\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="14f39983a223ffb075b93866fb9e9be8ea3d41bc">
+        <dex dex="D:\Documentos\Workspace\Merge2\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a5332c01342944e0b2d4728a81787e7d229ae31d\classes.dex" />
+    </item>
+
+</items>

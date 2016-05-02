@@ -118,7 +118,7 @@ public class UsuarioService {
                     case 404:
                     case 406:
 
-                        Toast.makeText(v.getContext(), "E-mail já está cadastrado.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(v.getContext(), "E-mail já usado.", Toast.LENGTH_LONG).show();
                         break;
                     case 500:
                     case 0:

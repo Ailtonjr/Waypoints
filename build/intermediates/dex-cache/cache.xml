@@ -1,3 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="D:\Documentos\Workspace\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_774552d1911da042b01d94150336dabf88fbb5d7\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="D:\Documentos\Workspace\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_34b7e81dd22bbfa93960f614091180e420e7babe\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="D:\Documentos\Workspace\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_1577c6bdca3d105b5d8a46d393ed63bfd7e5e162\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="D:\Documentos\Workspace\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_bcaa9bff02ac75b93050f2b4eabf9c0e6bfc0f8a\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="D:\Documentos\Workspace\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_73e8a9e923c44cafe204573152c40f3ea84bec6b\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Waypoints\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9ce1a75223bb51c827c7e939ca1f1affa107c41b">
+        <dex dex="D:\Documentos\Workspace\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_571f1e55d803b5a90e34fe7811974e4f82930492\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="D:\Documentos\Workspace\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_52239feb2f972ba55597057320ab44b096259b60\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Waypoints\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="27a395293836b89df15831c4ff35274f57b7c9a8">
+        <dex dex="D:\Documentos\Workspace\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_377434093bdfbffa3d7434b133c78bcf2b4b0b19\classes.dex" />
+    </item>
+    <item
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="D:\Documentos\Workspace\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_a4ea006b60a31b1ef1f45205b3aa598eb0850127\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Waypoints\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="D:\Documentos\Workspace\Waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_caf326f1023227de656d462151c6323431f1696f\classes.dex" />
+    </item>
+
+</items>

@@ -4,6 +4,10 @@
         "source": "F:\\AndroidSDK\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
+        "merged": "D:\\Documentos\\Workspace\\Merge2\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "D:\\Documentos\\Workspace\\Merge2\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
         "merged": "C:\\Users\\Ailton Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
         "source": "C:\\Users\\Ailton Jr\\AndroidStudioProjects\\Waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\color-v23\\abc_color_highlight_material.xml"
     },

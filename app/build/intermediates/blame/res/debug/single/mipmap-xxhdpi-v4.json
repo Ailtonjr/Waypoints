@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Ailton Cardoso Jr\\Documents\\Workspace\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Ailton Cardoso Jr\\Documents\\Workspace\\Waypoints\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "D:\\Documentos\\Workspace\\Waypoints\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
         "source": "D:\\Documentos\\Workspace\\Waypoints\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }

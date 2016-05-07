@@ -1,6 +1,7 @@
 package br.com.waypoints.waypoints;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -12,7 +13,9 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import br.com.waypoints.controller.UsuarioController;
+import br.com.waypoints.entity.Usuario;
 import br.com.waypoints.exeption.BusinessException;
+import br.com.waypoints.util.network.VolleyCallback;
 
 public class CadastroActivity extends AppCompatActivity {
 
@@ -71,13 +74,30 @@ public class CadastroActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_mode_close_button) {
             if(sexo() != null) {
-                ProgressDialog pDialog = new ProgressDialog(view.getContext());
+                final ProgressDialog pDialog = new ProgressDialog(view.getContext());
                 if (senha.getText().toString().equals(confirmaSenha.getText().toString())) {
                     try {
                         pDialog.setMessage("Loading...");
                         pDialog.show();
                         usuarioController.cadastro(view,
-                                pDialog,
+                                new VolleyCallback() {
+                                    @Override
+                                    public void onSuccess(Usuario usuario) {
+                                        pDialog.hide();
+                                        Toast.makeText(view.getContext(), "Cadastro efetuado com sucesso", Toast.LENGTH_LONG).show();
+                                        Intent intentLogin = new Intent(CadastroActivity.this, MainActivity.class);
+                                        Toast.makeText(view.getContext(), "Email " + usuario.getNome(), Toast.LENGTH_LONG).show();
+                                        intentLogin.putExtra("email", usuario.getEmail()); // Envia campo email por parametro para MainActivity
+                                        intentLogin.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                        view.getContext().startActivity(intentLogin);
+                                    }
+
+                                    @Override
+                                    public void onError(String mensagem) {
+                                        pDialog.hide();
+                                        Toast.makeText(view.getContext(), "Cadastro efetuado com sucesso", Toast.LENGTH_LONG).show();
+                                    }
+                                },
                                 nome.getText().toString(),
                                 email.getText().toString(),
                                 senha.getText().toString(),

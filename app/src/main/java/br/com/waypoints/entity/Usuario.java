@@ -1,18 +1,18 @@
 package br.com.waypoints.entity;
 
 public class Usuario{
-	private int id;
+	private long id;
 	String nome;
 	String email;
 	String senha;
 	String categoriaCNH;
 	String sexo;
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

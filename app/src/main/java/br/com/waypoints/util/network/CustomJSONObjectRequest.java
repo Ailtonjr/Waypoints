@@ -12,10 +12,11 @@ import java.util.Map;
 
 public class CustomJSONObjectRequest extends JsonObjectRequest {
 
+    private static String urlBase ="http://gmuh.dyndns.info:3000/waypoints-ws/recursos/";
     public CustomJSONObjectRequest(int method, String url, JSONObject jsonRequest,
                                    Response.Listener<JSONObject> listener,
                                    Response.ErrorListener errorListener) {
-        super(method, url, jsonRequest, listener, errorListener);
+        super(method, urlBase+url, jsonRequest, listener, errorListener);
     }
 
     @Override

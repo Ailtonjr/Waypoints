@@ -13,8 +13,10 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 
 import br.com.waypoints.controller.UsuarioController;
+import br.com.waypoints.entity.Usuario;
 import br.com.waypoints.exeption.BusinessException;
 import br.com.waypoints.util.network.CustomVolleyRequestQueue;
+import br.com.waypoints.util.network.VolleyCallback;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,19 +47,26 @@ public class MainActivity extends AppCompatActivity {
         usuarioController = new UsuarioController();
         botaoEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                ProgressDialog pDialog = new ProgressDialog(v.getContext());
+            public void onClick(final View v) {
+                final ProgressDialog pDialog = new ProgressDialog(v.getContext());
                 try {
                     pDialog.setMessage("Loading...");
                     pDialog.show();
-                    usuarioController.login(v, pDialog, editTextEmail.getText().toString(), editTextSenha.getText().toString());
-// Esse trexo de codigo foi movido para a classe UsuarioService, sera executado quando for aceito o login
-
-
-//                    Intent intentEntrar = new Intent(MainActivity.this, RotasActivity.class);
-//                    intentEntrar.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                    startActivity(intentEntrar);
-//                    finish();   // Para impedir que apos logado volte a tela de login sem deslogar
+                    usuarioController.login(v, new VolleyCallback() {
+                        @Override
+                        public void onSuccess(Usuario usuario) {
+                            pDialog.hide();
+                            Toast.makeText(getApplicationContext(), usuario.getNome(), Toast.LENGTH_LONG).show();
+                            Intent intentEntrar = new Intent(v.getContext(), RotasActivity.class);
+                            intentEntrar.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            v.getContext().startActivity(intentEntrar);
+                        }
+                        @Override
+                        public void onError(String mensagem) {
+                            pDialog.hide();
+                            Toast.makeText(getApplicationContext(), mensagem, Toast.LENGTH_LONG).show();
+                        }
+                    },editTextEmail.getText().toString(), editTextSenha.getText().toString());
                 } catch (BusinessException e) {
                     pDialog.hide();
                     Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
@@ -88,10 +97,8 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
 
             try {
-                if(getIntent().getExtras().getString("email") != null) {
-                    Bundle bundleParametros = getIntent().getExtras();
-                    editTextEmail.setText(bundleParametros.getString("email"));
-                }
+                Bundle bundleParametros = getIntent().getExtras();
+                editTextEmail.setText(bundleParametros.getString("email"));
             } catch (Exception ex) {
                 ex.printStackTrace();
             }

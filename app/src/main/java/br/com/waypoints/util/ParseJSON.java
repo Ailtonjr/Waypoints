@@ -11,7 +11,7 @@ public class ParseJSON {
         Usuario user = new Usuario();
         try {
             JSONObject userObject = new JSONObject(jsonString);
-            user.setId((int) userObject.getLong("id"));
+            //user.setId(userObject.getLong("id"));
             user.setNome(userObject.getString("nome"));
             user.setEmail(userObject.getString("email"));
             user.setCategoriaCNH(userObject.getString("categoriaCNH"));

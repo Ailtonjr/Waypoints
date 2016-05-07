@@ -4,6 +4,8 @@ package br.com.waypoints.model;
 import android.app.ProgressDialog;
 import android.view.View;
 
+import com.android.volley.toolbox.Volley;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -11,6 +13,7 @@ import br.com.waypoints.entity.Usuario;
 import br.com.waypoints.exeption.BusinessException;
 import br.com.waypoints.service.UsuarioService;
 import br.com.waypoints.util.EmailUtil;
+import br.com.waypoints.util.network.VolleyCallback;
 
 
 public class UsuarioFA {
@@ -24,26 +27,23 @@ public class UsuarioFA {
 		usuarioService = new UsuarioService();
 	}
 
-	public Usuario login(View v,ProgressDialog pDialog, JSONObject jsonUsuario) throws BusinessException, JSONException {
+	public void login(View v, VolleyCallback volleyCallback, JSONObject jsonUsuario) throws BusinessException, JSONException {
 		if ((jsonUsuario.get("email") == null)
 				|| (jsonUsuario.get("email").toString().isEmpty())
 				|| (!EmailUtil.isValid(jsonUsuario.get("email").toString()))) {
 			throw new BusinessException("O email informado é inválido.");
 		}
-        /*if (usuarioDAO.getByEmail(usuario.getEmail()) == null) {
-            throw new BusinessException("E-mail não cadastrado.");
-        }*/
-		return usuarioService.doLogin(v, pDialog, jsonUsuario);
+		usuarioService.doLogin(v, volleyCallback, jsonUsuario);
 	}
 
-	public Usuario cadastro(View v, ProgressDialog pDialog , JSONObject jsonUsuario) throws BusinessException {
+	public void cadastro(View v, VolleyCallback callback, JSONObject jsonUsuario) throws BusinessException {
 
 		try {
 			validaUsuario(jsonUsuario);
 		} catch (BusinessException be) {
 			throw new BusinessException(be.getMessage());
 		}
-		return usuarioService.cadastrar(v, pDialog, jsonUsuario);
+		usuarioService.cadastrar(v, callback, jsonUsuario);
 	}
 
 	private void validaUsuario(JSONObject usuario) throws BusinessException {

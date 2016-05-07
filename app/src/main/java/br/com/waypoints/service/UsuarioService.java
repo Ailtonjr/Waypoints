@@ -18,32 +18,30 @@ import br.com.waypoints.exeption.BusinessException;
 import br.com.waypoints.util.network.CustomJSONObjectRequest;
 import br.com.waypoints.util.network.CustomVolleyRequestQueue;
 import br.com.waypoints.util.ParseJSON;
+import br.com.waypoints.util.network.VolleyCallback;
 import br.com.waypoints.waypoints.MainActivity;
 import br.com.waypoints.waypoints.RotasActivity;
 
-public class UsuarioService {
+public class UsuarioService{
 
     private ParseJSON parseJSON;
     private RequestQueue mQueue;
-    private Usuario usuario;
 
     public UsuarioService(){
         parseJSON = new ParseJSON();
     }
 
-    public Usuario doLogin(final View v, final ProgressDialog pDialog, JSONObject usuarioJSON) throws BusinessException {
-        String url ="http://gmuh.dyndns.info:3000/waypoints-ws/recursos/usuario/login";
+    public void doLogin(final View v, final VolleyCallback volleyCallback, final JSONObject usuarioJSON) throws BusinessException {
+        String url ="usuario/login";
 
         final CustomJSONObjectRequest jsObjRequest = new CustomJSONObjectRequest(Request.Method
                 .POST, url,
                 usuarioJSON, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Toast.makeText(v.getContext(), "Login efetuado com sucesso", Toast.LENGTH_LONG).show();
-                usuario = parseJSON.loadUserFromJSON(response.toString());
-                Intent intentEntrar = new Intent(v.getContext(), RotasActivity.class);
-                intentEntrar.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                v.getContext().startActivity(intentEntrar);
+                Usuario usuario = parseJSON.loadUserFromJSON(response.toString());
+
+                volleyCallback.onSuccess(usuario);
 
             }
         }, new Response.ErrorListener() {
@@ -58,13 +56,16 @@ public class UsuarioService {
                 switch (statusCode) {
                     case 401:
                     case 403:
-                        Toast.makeText(v.getContext(), "Usuario ou senha não confere", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(v.getContext(), "Usuario ou senha não confere", Toast.LENGTH_LONG).show();
+                        volleyCallback.onError("Usuario ou senha não confere");
                         break;
                     case 500:
-                        Toast.makeText(v.getContext(), "Servidor Offline", Toast.LENGTH_LONG).show();
+                    case 0:
+                        //Toast.makeText(v.getContext(), "Servidor Offline", Toast.LENGTH_LONG).show();
+                        volleyCallback.onError("Servidor Offline");
                         break;
                 }
-                pDialog.hide();
+                //pDialog.hide();
                 Log.i("Log", "Erro " + statusCode);
             }
 
@@ -74,28 +75,18 @@ public class UsuarioService {
 
         mQueue = CustomVolleyRequestQueue.getInstance(v.getContext()).getRequestQueue();
         mQueue.add(jsObjRequest);
-
-        return usuario;
     }
 
 
-    public Usuario cadastrar(final View v, final ProgressDialog pDialog, JSONObject usuarioJSON) throws BusinessException {
-        String url ="http://gmuh.dyndns.info:3000/waypoints-ws/recursos/usuario/cadastro";
+    public void cadastrar(final View v, final VolleyCallback callback, JSONObject usuarioJSON) throws BusinessException {
+        String url ="usuario/cadastro";
 
         final CustomJSONObjectRequest jsObjRequest = new CustomJSONObjectRequest(Request.Method
                 .POST, url,
                 usuarioJSON, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Toast.makeText(v.getContext(), "Cadastro efetuado com sucesso", Toast.LENGTH_LONG).show();
-                usuario = parseJSON.loadUserFromJSON(response.toString());
-                //Intent intentEntrar = new Intent(v.getContext(), RotasActivity.class);
-
-                Intent intentLogin = new Intent(v.getContext(), MainActivity.class);
-                intentLogin.putExtra("email", usuario.getEmail()); // Envia campo email por parametro para MainActivity
-
-                intentLogin.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                v.getContext().startActivity(intentLogin);
+                callback.onSuccess(parseJSON.loadUserFromJSON(response.toString()));
 
             }
         }, new Response.ErrorListener() {
@@ -111,15 +102,13 @@ public class UsuarioService {
                     case 403:
                     case 404:
                     case 406:
-
-                        Toast.makeText(v.getContext(), "E-mail já usado.", Toast.LENGTH_LONG).show();
+                        callback.onError("E-mail já usado!");
                         break;
                     case 500:
                     case 0:
-                        Toast.makeText(v.getContext(), "Servidor Offline", Toast.LENGTH_LONG).show();
+                        callback.onError("Servidor Offline");
                         break;
                 }
-                pDialog.hide();
                 Log.i("Log", "Erro " + statusCode);
             }
 
@@ -129,7 +118,5 @@ public class UsuarioService {
 
         mQueue = CustomVolleyRequestQueue.getInstance(v.getContext()).getRequestQueue();
         mQueue.add(jsObjRequest);
-
-        return usuario;
     }
 }

@@ -1,4 +1,4 @@
-package br.com.waypoints.network;
+package br.com.waypoints.util.network;
 
 import android.content.Context;
 

@@ -15,8 +15,8 @@ import org.json.JSONObject;
 
 import br.com.waypoints.entity.Usuario;
 import br.com.waypoints.exeption.BusinessException;
-import br.com.waypoints.network.CustomJSONObjectRequest;
-import br.com.waypoints.network.CustomVolleyRequestQueue;
+import br.com.waypoints.util.network.CustomJSONObjectRequest;
+import br.com.waypoints.util.network.CustomVolleyRequestQueue;
 import br.com.waypoints.util.ParseJSON;
 import br.com.waypoints.waypoints.MainActivity;
 import br.com.waypoints.waypoints.RotasActivity;
@@ -26,16 +26,13 @@ public class UsuarioService {
     private ParseJSON parseJSON;
     private RequestQueue mQueue;
     private Usuario usuario;
-    private String mensagemError = "";
 
     public UsuarioService(){
         parseJSON = new ParseJSON();
     }
 
-    public Usuario doLogin(final View v, JSONObject usuarioJSON) throws BusinessException {
+    public Usuario doLogin(final View v, final ProgressDialog pDialog, JSONObject usuarioJSON) throws BusinessException {
         String url ="http://gmuh.dyndns.info:3000/waypoints-ws/recursos/usuario/login";
-        //RequestQueue queue = Volley.newRequestQueue(v.getContext());
-
 
         final CustomJSONObjectRequest jsObjRequest = new CustomJSONObjectRequest(Request.Method
                 .POST, url,
@@ -58,19 +55,16 @@ public class UsuarioService {
                 if (error.networkResponse != null) {
                     statusCode = error.networkResponse.statusCode;
                 }
-                switch (statusCode){
+                switch (statusCode) {
+                    case 401:
                     case 403:
-                    case 404:
-                    case 406:
-
                         Toast.makeText(v.getContext(), "Usuario ou senha não confere", Toast.LENGTH_LONG).show();
                         break;
                     case 500:
                         Toast.makeText(v.getContext(), "Servidor Offline", Toast.LENGTH_LONG).show();
                         break;
                 }
-                //Toast.makeText(v.getContext(), "Erro ao tentar se conectar ao servidor ", Toast.LENGTH_LONG).show();
-
+                pDialog.hide();
                 Log.i("Log", "Erro " + statusCode);
             }
 

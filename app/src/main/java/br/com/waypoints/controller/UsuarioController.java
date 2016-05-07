@@ -18,13 +18,13 @@ public class UsuarioController {
         usuarioFA = new UsuarioFA();
     }
 
-    public void login(View v, String email, String senha) throws BusinessException {
+    public void login(View v, ProgressDialog pDialog, String email, String senha) throws BusinessException {
 
         JSONObject jsonData = new JSONObject();
         try {
             jsonData.put("email", email);
             jsonData.put("senha", senha);
-            usuarioFA.login(v, jsonData);
+            usuarioFA.login(v, pDialog, jsonData);
         } catch (JSONException e) {
             Log.e("Log", e.getMessage());
         }

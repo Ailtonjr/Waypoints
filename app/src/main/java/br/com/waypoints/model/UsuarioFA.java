@@ -24,7 +24,7 @@ public class UsuarioFA {
 		usuarioService = new UsuarioService();
 	}
 
-	public Usuario login(View v, JSONObject jsonUsuario) throws BusinessException, JSONException {
+	public Usuario login(View v,ProgressDialog pDialog, JSONObject jsonUsuario) throws BusinessException, JSONException {
 		if ((jsonUsuario.get("email") == null)
 				|| (jsonUsuario.get("email").toString().isEmpty())
 				|| (!EmailUtil.isValid(jsonUsuario.get("email").toString()))) {
@@ -33,7 +33,7 @@ public class UsuarioFA {
         /*if (usuarioDAO.getByEmail(usuario.getEmail()) == null) {
             throw new BusinessException("E-mail não cadastrado.");
         }*/
-		return usuarioService.doLogin(v, jsonUsuario);
+		return usuarioService.doLogin(v, pDialog, jsonUsuario);
 	}
 
 	public Usuario cadastro(View v, ProgressDialog pDialog , JSONObject jsonUsuario) throws BusinessException {

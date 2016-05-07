@@ -14,7 +14,7 @@ import com.android.volley.RequestQueue;
 
 import br.com.waypoints.controller.UsuarioController;
 import br.com.waypoints.exeption.BusinessException;
-import br.com.waypoints.network.CustomVolleyRequestQueue;
+import br.com.waypoints.util.network.CustomVolleyRequestQueue;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     pDialog.setMessage("Loading...");
                     pDialog.show();
-                    usuarioController.login(v, editTextEmail.getText().toString(), editTextSenha.getText().toString());
+                    usuarioController.login(v, pDialog, editTextEmail.getText().toString(), editTextSenha.getText().toString());
 // Esse trexo de codigo foi movido para a classe UsuarioService, sera executado quando for aceito o login
 
 

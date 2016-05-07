@@ -1,4 +1,4 @@
-package br.com.waypoints.network;
+package br.com.waypoints.util.network;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Response;

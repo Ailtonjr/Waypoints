@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\Ailton Cardoso Jr\Documents\Workspace\Waypoints\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\Ailton Cardoso Jr\Documents\Workspace\Waypoints\app\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Ailton Cardoso Jr\Documents\Workspace\waypoints\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\Ailton Cardoso Jr\Documents\Workspace\waypoints\app\src\debug\jniLibs"/></dataSet></merger>

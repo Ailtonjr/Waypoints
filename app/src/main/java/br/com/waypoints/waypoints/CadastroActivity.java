@@ -79,25 +79,28 @@ public class CadastroActivity extends AppCompatActivity {
                     try {
                         pDialog.setMessage("Loading...");
                         pDialog.show();
-                        usuarioController.cadastro(view,
-                                new VolleyCallback() {
-                                    @Override
-                                    public void onSuccess(Usuario usuario) {
-                                        pDialog.hide();
-                                        Toast.makeText(view.getContext(), "Cadastro efetuado com sucesso", Toast.LENGTH_LONG).show();
-                                        Intent intentLogin = new Intent(CadastroActivity.this, MainActivity.class);
-                                        Toast.makeText(view.getContext(), "Email " + usuario.getNome(), Toast.LENGTH_LONG).show();
-                                        intentLogin.putExtra("email", usuario.getEmail()); // Envia campo email por parametro para MainActivity
-                                        intentLogin.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                        view.getContext().startActivity(intentLogin);
-                                    }
 
-                                    @Override
-                                    public void onError(String mensagem) {
-                                        pDialog.hide();
-                                        Toast.makeText(view.getContext(), "Cadastro efetuado com sucesso", Toast.LENGTH_LONG).show();
-                                    }
-                                },
+                        VolleyCallback volleyCallback = new VolleyCallback() {
+                            @Override
+                            public void onSuccess(Usuario usuario) {
+                                pDialog.hide();
+                                Toast.makeText(view.getContext(), "Cadastro efetuado com sucesso", Toast.LENGTH_LONG).show();
+                                Intent intentLogin = new Intent(CadastroActivity.this, MainActivity.class);
+                                Toast.makeText(view.getContext(), "Email " + usuario.getNome(), Toast.LENGTH_LONG).show();
+                                intentLogin.putExtra("email", usuario.getEmail()); // Envia campo email por parametro para MainActivity
+                                intentLogin.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                view.getContext().startActivity(intentLogin);
+                            }
+
+                            @Override
+                            public void onError(String mensagem) {
+                                pDialog.hide();
+                                Toast.makeText(view.getContext(), "Cadastro efetuado com sucesso", Toast.LENGTH_LONG).show();
+                            }
+                        };
+
+                        usuarioController.cadastro(view,
+                                volleyCallback,
                                 nome.getText().toString(),
                                 email.getText().toString(),
                                 senha.getText().toString(),

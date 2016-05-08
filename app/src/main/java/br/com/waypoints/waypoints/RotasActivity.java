@@ -13,6 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import br.com.waypoints.entity.Usuario;
 
 public class RotasActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -23,6 +26,7 @@ public class RotasActivity extends AppCompatActivity
         setContentView(R.layout.activity_rotas);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +45,17 @@ public class RotasActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        //TESTE de setar o nome e email no menu
+        Intent intent = getIntent();
+        Usuario usuarioGet = (Usuario) intent.getSerializableExtra("usuario");
+
+        View hView =  navigationView.getHeaderView(0);
+        TextView nomeMenu = (TextView)hView.findViewById(R.id.textViewNomeMenu);
+        TextView emailMenu = (TextView)hView.findViewById(R.id.textViewEmailMenu);
+        nomeMenu.setText(usuarioGet.getNome());
+        emailMenu.setText(usuarioGet.getEmail());
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

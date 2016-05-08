@@ -11,7 +11,7 @@ public enum StatusRota {
     private final String descricao;
     private final String hexaCor;
 
-    private StatusRota(String descricao, String hexaCor) {
+    StatusRota(String descricao, String hexaCor) {
         this.descricao = descricao;
         this.hexaCor = hexaCor;
     }

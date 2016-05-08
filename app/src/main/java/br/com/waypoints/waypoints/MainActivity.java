@@ -56,8 +56,9 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onSuccess(Usuario usuario) {
                             pDialog.hide();
-                            Toast.makeText(getApplicationContext(), usuario.getNome(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "Bem Vindo " + usuario.getNome(), Toast.LENGTH_LONG).show();
                             Intent intentEntrar = new Intent(v.getContext(), RotasActivity.class);
+                            intentEntrar.putExtra("usuario", usuario);
                             intentEntrar.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             v.getContext().startActivity(intentEntrar);
                         }

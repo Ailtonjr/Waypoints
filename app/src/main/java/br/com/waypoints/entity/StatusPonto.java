@@ -10,7 +10,7 @@ public enum StatusPonto {
     private final String descricao;
     private final String hexaCor;
 
-    private StatusPonto(String descricao, String hexaCor) {
+    StatusPonto(String descricao, String hexaCor) {
         this.descricao = descricao;
         this.hexaCor = hexaCor;
     }

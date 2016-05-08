@@ -1,6 +1,8 @@
 package br.com.waypoints.entity;
 
-public class Usuario{
+import java.io.Serializable;
+
+public class Usuario implements Serializable{
 	private long id;
 	String nome;
 	String email;

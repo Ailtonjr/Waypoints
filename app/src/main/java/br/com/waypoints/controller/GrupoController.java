@@ -6,6 +6,7 @@ import java.util.List;
 
 import br.com.waypoints.entity.Grupo;
 import br.com.waypoints.entity.Integrante;
+import br.com.waypoints.entity.Usuario;
 import br.com.waypoints.exeption.BusinessException;
 import br.com.waypoints.model.GrupoFA;
 import br.com.waypoints.util.JSONUtil;
@@ -29,5 +30,9 @@ public class GrupoController {
         grupo.setIntegrantes(integrantes);
         grupo.setProprietarioId(id);
         grupoFA.cadastro(context, callback, jsonUtil.getJSON(grupo));
+    }
+
+    public void getGrupos(Context context, VolleyCallback callback,Usuario usuario ) {
+        grupoFA.getGrupos(context, callback, jsonUtil.getJSON(usuario));
     }
 }

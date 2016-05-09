@@ -3,16 +3,15 @@ package br.com.waypoints.waypoints;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import br.com.waypoints.entity.Usuario;
@@ -20,6 +19,7 @@ import br.com.waypoints.entity.Usuario;
 public class RotasActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private  Usuario usuarioGet;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +49,7 @@ public class RotasActivity extends AppCompatActivity
 
         //TESTE de setar o nome e email no menu
         Intent intent = getIntent();
-        Usuario usuarioGet = (Usuario) intent.getSerializableExtra("usuario");
+        usuarioGet = (Usuario) intent.getSerializableExtra("usuario");
 
         View hView =  navigationView.getHeaderView(0);
         TextView nomeMenu = (TextView)hView.findViewById(R.id.textViewNomeMenu);
@@ -100,15 +100,18 @@ public class RotasActivity extends AppCompatActivity
         if (id == R.id.nav_rotas) {
             Intent intentRotas = new Intent(RotasActivity.this, RotasActivity.class);
             intentRotas.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intentRotas.putExtra("usuario", usuarioGet);
             startActivity(intentRotas);
             finish();
         } else if (id == R.id.nav_grupos) {
             Intent intentGrupos = new Intent(RotasActivity.this, GruposActivity.class);
             intentGrupos.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intentGrupos.putExtra("usuario", usuarioGet);
             startActivity(intentGrupos);
             finish();
         } else if (id == R.id.nav_configuracoes) {
             Intent intentConfiguracoes = new Intent(RotasActivity.this, ConfigActivity.class);
+            intentConfiguracoes.putExtra("usuario", usuarioGet);
             startActivity(intentConfiguracoes);
         } else if (id == R.id.nav_sobre) {
             Intent intentSobre = new Intent(RotasActivity.this, SobreActivity.class);

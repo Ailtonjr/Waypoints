@@ -13,9 +13,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import br.com.waypoints.entity.Usuario;
 
 public class ConfigActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private  Usuario usuarioGet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +46,18 @@ public class ConfigActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+
+        //TESTE de setar o nome e email no menu
+        Intent intent = getIntent();
+        usuarioGet = (Usuario) intent.getSerializableExtra("usuario");
+
+        View hView =  navigationView.getHeaderView(0);
+        TextView nomeMenu = (TextView)hView.findViewById(R.id.textViewNomeMenu);
+        TextView emailMenu = (TextView)hView.findViewById(R.id.textViewEmailMenu);
+        nomeMenu.setText(usuarioGet.getNome());
+        emailMenu.setText(usuarioGet.getEmail());
     }
 
     @Override
@@ -84,25 +101,25 @@ public class ConfigActivity extends AppCompatActivity
         if (id == R.id.nav_rotas) {
             Intent intentRotas = new Intent(ConfigActivity.this, RotasActivity.class);
             intentRotas.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intentRotas.putExtra("usuario", usuarioGet);
             startActivity(intentRotas);
             finish();
         } else if (id == R.id.nav_grupos) {
             Intent intentGrupos = new Intent(ConfigActivity.this, GruposActivity.class);
             intentGrupos.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intentGrupos.putExtra("usuario", usuarioGet);
             startActivity(intentGrupos);
             finish();
         } else if (id == R.id.nav_configuracoes) {
             Intent intentConfiguracoes = new Intent(ConfigActivity.this, ConfigActivity.class);
+            intentConfiguracoes.putExtra("usuario", usuarioGet);
             startActivity(intentConfiguracoes);
-            finish();
         } else if (id == R.id.nav_sobre) {
             Intent intentSobre = new Intent(ConfigActivity.this, SobreActivity.class);
             startActivity(intentSobre);
-            finish();
         } else if (id == R.id.nav_sair) {
             Intent intentLogin = new Intent(ConfigActivity.this, MainActivity.class);
             startActivity(intentLogin);
-            finish();
             // Aqui deletar HASH de sessão no app e no banco.
         }
 

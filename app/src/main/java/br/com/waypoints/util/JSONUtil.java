@@ -24,6 +24,21 @@ public class JSONUtil {
         return json;
     }
 
+    public JSONObject getJSON(Usuario obj) {
+        Gson gson = new Gson();
+        String jsonString = gson.toJson(obj);
+
+        JSONObject json = null;
+        try {
+            json = new JSONObject(jsonString);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return json;
+    }
+
+
     public Usuario loadUserFromJSON(String jsonString) {
         Usuario user = new Usuario();
         try {

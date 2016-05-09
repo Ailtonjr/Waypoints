@@ -16,13 +16,17 @@ public class GrupoFA {
         grupoService = new GrupoService();
     }
     public void cadastro(Context context, VolleyCallback callback, JSONObject jsonGrupo) throws BusinessException {
-        /*try {
+        try {
             validaGrupo(jsonGrupo);
         } catch (BusinessException be) {
             throw new BusinessException(be.getMessage());
-        }*/
+        }
         Log.d("Grupos", jsonGrupo.toString());
         grupoService.cadastrar(context, callback, jsonGrupo);
+    }
+
+    public void getGrupos(Context context, VolleyCallback callback, JSONObject jsonUsuario) {
+        grupoService.getGrupos(context, callback, jsonUsuario);
     }
 
     private void validaGrupo(JSONObject usuario) throws BusinessException {
@@ -38,4 +42,6 @@ public class GrupoFA {
             e.printStackTrace();
         }
     }
+
+
 }

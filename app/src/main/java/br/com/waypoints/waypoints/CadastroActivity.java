@@ -13,7 +13,6 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import br.com.waypoints.controller.UsuarioController;
-import br.com.waypoints.entity.Grupo;
 import br.com.waypoints.entity.Usuario;
 import br.com.waypoints.exeption.BusinessException;
 import br.com.waypoints.util.network.VolleyCallback;

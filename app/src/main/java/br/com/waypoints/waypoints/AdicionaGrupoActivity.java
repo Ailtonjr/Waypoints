@@ -2,7 +2,7 @@ package br.com.waypoints.waypoints;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.net.Uri;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -15,10 +15,6 @@ import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
-
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,10 +35,10 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
     private EditText editTextEmail;
     private ImageButton imageButtonAdd;
     private GrupoController grupoController;
-    private GoogleApiClient client;
     private ListView listViewEmails;
     private List<String> listEmails;
     private ArrayAdapter<String> adapter;
+    private  Usuario usuarioGet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +81,10 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
                 if (radioButtonPlanejador.isChecked()) radioButtonPlanejador.setChecked(false);
             }
         });
+
+        //TESTE de setar o nome e email no menu
+        Intent intent = getIntent();
+        usuarioGet = (Usuario) intent.getSerializableExtra("usuario");
     }
 
     @Override
@@ -98,14 +98,17 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
         if (item.getItemId() == R.id.action_mode_close_button) {
             final ProgressDialog pDialog = new ProgressDialog(context);
             try {
-
-
+                pDialog.show();
                 VolleyCallback volleyCallback = new VolleyCallback() {
 
                     @Override
                     public void onSuccess(Object object) {
                         pDialog.hide();
                         Toast.makeText(context, "Grupo criado com sucesso", Toast.LENGTH_LONG).show();
+                        Intent intentGrupo = new Intent(context, GruposActivity.class);
+                        intentGrupo.putExtra("usuario", usuarioGet);
+                        intentGrupo.putExtra("grupo", nome.getText().toString());
+                        context.startActivity(intentGrupo);
                     }
 
                     @Override
@@ -122,9 +125,9 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
                 u1.setSexo("M");
 
                 Usuario u2 = new Usuario();
-                u2.setId(new Long(33));
-                u2.setNome("Teste2");
-                u2.setEmail("teste2@gmail.com");
+                u2.setId(new Long(8));
+                u2.setNome("Rômulo Göelzer Portolann");
+                u2.setEmail("romulogoelzer@gmail.com");
                 u2.setCategoriaCNH("AB");
                 u2.setSexo("M");
 
@@ -149,7 +152,6 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
                         (long) 8
                 );
             } catch (BusinessException e) {
-                //pDialog.hide();
                 Toast.makeText(context, e.getMessage(), Toast.LENGTH_LONG).show();
                 e.printStackTrace();
             }
@@ -172,45 +174,5 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
             return "Planejador";
         }
         return null;
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.connect();
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "AdicionaGrupo Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app URL is correct.
-                Uri.parse("android-app://br.com.waypoints.waypoints/http/host/path")
-        );
-        AppIndex.AppIndexApi.start(client, viewAction);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "AdicionaGrupo Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app URL is correct.
-                Uri.parse("android-app://br.com.waypoints.waypoints/http/host/path")
-        );
-        AppIndex.AppIndexApi.end(client, viewAction);
-        client.disconnect();
     }
 }

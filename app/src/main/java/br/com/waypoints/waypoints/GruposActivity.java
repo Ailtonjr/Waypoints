@@ -1,23 +1,27 @@
 package br.com.waypoints.waypoints;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.waypoints.controller.GrupoController;
+import br.com.waypoints.entity.Usuario;
 
 public class GruposActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -25,6 +29,9 @@ public class GruposActivity extends AppCompatActivity
     private ListView listViewGrupos;
     private List<String> listGrupos = new ArrayList<>();
     private ArrayAdapter<String> adapter;
+    private  Usuario usuarioGet;
+    private Context context;
+    private GrupoController grupoController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +43,8 @@ public class GruposActivity extends AppCompatActivity
         listViewGrupos = (ListView) findViewById(R.id.listViewGruposTelaGrupos);
         adapter = new ArrayAdapter(this, R.layout.itemlist_email, R.id.textViewEmailItemList);
         listViewGrupos.setAdapter(adapter);
+        context = listViewGrupos.getContext();
+        grupoController = new GrupoController();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -55,10 +64,44 @@ public class GruposActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+
+        //TESTE de setar o nome e email no menu
+        Intent intent = getIntent();
+        usuarioGet = (Usuario) intent.getSerializableExtra("usuario");
+        if(intent.getStringExtra("grupo") != null){
+            addListItem(intent.getStringExtra("grupo"));
+        }
+
+
+        View hView =  navigationView.getHeaderView(0);
+        TextView nomeMenu = (TextView)hView.findViewById(R.id.textViewNomeMenu);
+        TextView emailMenu = (TextView)hView.findViewById(R.id.textViewEmailMenu);
+        nomeMenu.setText(usuarioGet.getNome());
+        emailMenu.setText(usuarioGet.getEmail());
+
+
+
+       /* // TODO: Provisório, Arrumar
+
+        VolleyCallback callback = new VolleyCallback() {
+
+            @Override
+            public void onSuccess(Object object) {
+                Toast.makeText(context, "Retornado com sucesso", Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onError(String mensagem) {
+                Toast.makeText(context, mensagem, Toast.LENGTH_LONG).show();
+            }
+        };
+        grupoController.getGrupos(context, callback, usuarioGet);*/
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentNovoGrupo = new Intent(GruposActivity.this, AdicionaGrupoActivity.class);
+                intentNovoGrupo.putExtra("usuario", usuarioGet);
                 startActivity(intentNovoGrupo);
             }
         });
@@ -104,15 +147,18 @@ public class GruposActivity extends AppCompatActivity
         if (id == R.id.nav_rotas) {
             Intent intentRotas = new Intent(GruposActivity.this, RotasActivity.class);
             intentRotas.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intentRotas.putExtra("usuario", usuarioGet);
             startActivity(intentRotas);
             finish();
         } else if (id == R.id.nav_grupos) {
             Intent intentGrupos = new Intent(GruposActivity.this, GruposActivity.class);
             intentGrupos.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intentGrupos.putExtra("usuario", usuarioGet);
             startActivity(intentGrupos);
             finish();
         } else if (id == R.id.nav_configuracoes) {
             Intent intentConfiguracoes = new Intent(GruposActivity.this, ConfigActivity.class);
+            intentConfiguracoes.putExtra("usuario", usuarioGet);
             startActivity(intentConfiguracoes);
         } else if (id == R.id.nav_sobre) {
             Intent intentSobre = new Intent(GruposActivity.this, SobreActivity.class);

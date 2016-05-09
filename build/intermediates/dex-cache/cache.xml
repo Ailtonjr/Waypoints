@@ -1,3 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\Documentos\Workspace\Waypoints\waypoints\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="D:\Documentos\Workspace\Waypoints\waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.1.0_66894289ce827d2a9110b731d20d659dffd80599\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Waypoints\waypoints\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="62ac176e5c0cbd606d83884664754ce7f822f28d">
+        <dex dex="D:\Documentos\Workspace\Waypoints\waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6205e08d19103c823f863eabc37bd9d41260ea54\classes.dex" />
+    </item>
+    <item
+        jar="D:\Documentos\Workspace\Waypoints\waypoints\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="D:\Documentos\Workspace\Waypoints\waypoints\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.1.0_95003dc8529a70e23b55e31686d59e9515e9dc4f\classes.dex" />
+    </item>
+
+</items>

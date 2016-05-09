@@ -62,10 +62,6 @@ public class UsuarioFA {
 			if (usuario.get("senha").toString().length() < TAM_MIN_SENHA) {
 				throw new BusinessException("A senha deve ter pelo menos \"" + TAM_MIN_SENHA + "\" caracteres.");
 			}
-
-//			if (usuarioDAO.getByEmail(usuario.getEmail()) != null) {
-//				throw new BusinessException("Este e-mail já está cadastrado.");
-//			}
 			if (usuario.get("sexo") == null) {
 				throw new BusinessException("O sexo deve ser selecionado.");
 			}

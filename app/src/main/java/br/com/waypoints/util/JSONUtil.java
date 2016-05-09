@@ -1,11 +1,28 @@
 package br.com.waypoints.util;
 
+import com.google.gson.Gson;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import br.com.waypoints.entity.Grupo;
 import br.com.waypoints.entity.Usuario;
 
-public class ParseJSON {
+public class JSONUtil {
+
+    public JSONObject getJSON(Grupo obj) {
+        Gson gson = new Gson();
+        String jsonString = gson.toJson(obj);
+
+        JSONObject json = null;
+        try {
+            json = new JSONObject(jsonString);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return json;
+    }
 
     public Usuario loadUserFromJSON(String jsonString) {
         Usuario user = new Usuario();

@@ -1,10 +1,7 @@
 package br.com.waypoints.service;
 
-import android.app.ProgressDialog;
-import android.content.Intent;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -15,20 +12,18 @@ import org.json.JSONObject;
 
 import br.com.waypoints.entity.Usuario;
 import br.com.waypoints.exeption.BusinessException;
+import br.com.waypoints.util.JSONUtil;
 import br.com.waypoints.util.network.CustomJSONObjectRequest;
 import br.com.waypoints.util.network.CustomVolleyRequestQueue;
-import br.com.waypoints.util.ParseJSON;
 import br.com.waypoints.util.network.VolleyCallback;
-import br.com.waypoints.waypoints.MainActivity;
-import br.com.waypoints.waypoints.RotasActivity;
 
 public class UsuarioService{
 
-    private ParseJSON parseJSON;
+    private JSONUtil JSONUtil;
     private RequestQueue mQueue;
 
     public UsuarioService(){
-        parseJSON = new ParseJSON();
+        JSONUtil = new JSONUtil();
     }
 
     public void doLogin(final View v, final VolleyCallback volleyCallback, final JSONObject usuarioJSON) throws BusinessException {
@@ -39,7 +34,7 @@ public class UsuarioService{
                 usuarioJSON, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Usuario usuario = parseJSON.loadUserFromJSON(response.toString());
+                Usuario usuario = JSONUtil.loadUserFromJSON(response.toString());
 
                 volleyCallback.onSuccess(usuario);
 
@@ -86,7 +81,7 @@ public class UsuarioService{
                 usuarioJSON, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                callback.onSuccess(parseJSON.loadUserFromJSON(response.toString()));
+                callback.onSuccess(JSONUtil.loadUserFromJSON(response.toString()));
 
             }
         }, new Response.ErrorListener() {

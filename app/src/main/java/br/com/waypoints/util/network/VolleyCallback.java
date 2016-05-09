@@ -1,8 +1,6 @@
 package br.com.waypoints.util.network;
 
-import br.com.waypoints.entity.Usuario;
-
 public interface VolleyCallback {
-    void onSuccess(Usuario usuario);
+    void onSuccess(Object object);
     void onError(String mensagem);
 }

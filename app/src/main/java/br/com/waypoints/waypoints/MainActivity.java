@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         cadastro = (TextView) findViewById(R.id.textViewCadastroLogin);
         recupera = (TextView) findViewById(R.id.textViewEsqueciSenhaLogin);
 
-        //editTextEmail.setText("romulogoelzer@gmail.com");
-        //editTextSenha.setText("teste");
+        editTextEmail.setText("ailton@gmail.com");
+        editTextSenha.setText("teste123");
 
 
         usuarioController = new UsuarioController();
@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
                     pDialog.show();
                     usuarioController.login(v, new VolleyCallback() {
                         @Override
-                        public void onSuccess(Usuario usuario) {
+                        public void onSuccess(Object object) {
+                            Usuario usuario = (Usuario) object;
                             pDialog.hide();
                             Toast.makeText(getApplicationContext(), "Bem Vindo " + usuario.getNome(), Toast.LENGTH_LONG).show();
                             Intent intentEntrar = new Intent(v.getContext(), RotasActivity.class);

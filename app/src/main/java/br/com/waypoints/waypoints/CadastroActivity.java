@@ -13,6 +13,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import br.com.waypoints.controller.UsuarioController;
+import br.com.waypoints.entity.Grupo;
 import br.com.waypoints.entity.Usuario;
 import br.com.waypoints.exeption.BusinessException;
 import br.com.waypoints.util.network.VolleyCallback;
@@ -43,13 +44,6 @@ public class CadastroActivity extends AppCompatActivity {
         cnh = (Spinner) findViewById(R.id.spinnerCNHCadastro);
         radioMasc = (RadioButton) findViewById(R.id.radioButtonMascCadastro);
         radioFem = (RadioButton) findViewById(R.id.radioButtonFemCadastro);
-
-        //nome.setText("testes");
-        //email.setText("testes@gmail.com");
-        //senha.setText("teste");
-        //confirmaSenha.setText("teste123");
-        //cnh.setSelection(6);
-
 
         usuarioController = new UsuarioController();
 
@@ -82,7 +76,8 @@ public class CadastroActivity extends AppCompatActivity {
 
                         VolleyCallback volleyCallback = new VolleyCallback() {
                             @Override
-                            public void onSuccess(Usuario usuario) {
+                            public void onSuccess(Object object) {
+                                Usuario usuario = (Usuario) object;
                                 pDialog.hide();
                                 Toast.makeText(view.getContext(), "Cadastro efetuado com sucesso", Toast.LENGTH_LONG).show();
                                 Intent intentLogin = new Intent(CadastroActivity.this, MainActivity.class);

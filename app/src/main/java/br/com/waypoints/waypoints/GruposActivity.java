@@ -13,9 +13,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class GruposActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private ListView listViewGrupos;
+    private List<String> listGrupos = new ArrayList<>();
+    private ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +32,10 @@ public class GruposActivity extends AppCompatActivity
         setContentView(R.layout.activity_grupos);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        listViewGrupos = (ListView) findViewById(R.id.listViewGruposTelaGrupos);
+        adapter = new ArrayAdapter(this, R.layout.itemlist_email, R.id.textViewEmailItemList);
+        listViewGrupos.setAdapter(adapter);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +62,12 @@ public class GruposActivity extends AppCompatActivity
                 startActivity(intentNovoGrupo);
             }
         });
+    }
+
+    public void addListItem(String grupo) {
+        listGrupos.add(grupo);
+        adapter.add(grupo);
+        adapter.notifyDataSetChanged();
     }
 
     @Override

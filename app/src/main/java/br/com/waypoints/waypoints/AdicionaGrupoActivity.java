@@ -9,7 +9,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Adapter;
+import android.widget.ArrayAdapter;
+
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -26,6 +30,10 @@ import br.com.waypoints.entity.Integrante;
 import br.com.waypoints.entity.Usuario;
 import br.com.waypoints.exeption.BusinessException;
 import br.com.waypoints.util.network.VolleyCallback;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class AdicionaGrupoActivity extends AppCompatActivity {
 
@@ -34,6 +42,8 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
     private RadioButton radioButtonPlanejador;
     private RadioButton radioButtonEntregador;
     private Context context;
+    private View view;
+    private EditText editTextEmail;
     private ImageButton imageButtonAdd;
     private GrupoController grupoController;
     /**
@@ -41,6 +51,9 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+    private ListView listViewEmails;
+    private List<String> listEmails = new ArrayList<>();
+    private ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +64,11 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
         ramo = (Spinner) findViewById(R.id.spinnerRamoNovoGrupo);
         radioButtonPlanejador = (RadioButton) findViewById(R.id.radioButtonPlanejadorAdicionaGrupo);
         radioButtonEntregador = (RadioButton) findViewById(R.id.radioButtonEntregadorAdicionaGrupo);
+        editTextEmail = (EditText) findViewById(R.id.editTextEmailAdicionaGrupo);
         imageButtonAdd = (ImageButton) findViewById(R.id.imageButtonAddAdicionaGrupo);
+        listViewEmails = (ListView) findViewById(R.id.listViewEmailAdicionaGrupo);
+        adapter = new ArrayAdapter(this, R.layout.itemlist_email, R.id.textViewEmailItemList);
+        listViewEmails.setAdapter(adapter);
 
         grupoController = new GrupoController();
 
@@ -60,6 +77,8 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //  Botao adiciona integrante. Adicionar a uma lista antes de integrar o grupo por completo.
+                addListItem(editTextEmail.getText().toString());
+                editTextEmail.setText("");
             }
         });
 
@@ -156,9 +175,9 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
     }
 
     private String tipoIntegrante() {
-        if (radioButtonEntregador.isChecked()) {
+        if(radioButtonEntregador.isChecked()){
             return "Entregador";
-        } else if (radioButtonPlanejador.isChecked()) {
+        }else if (radioButtonPlanejador.isChecked()){
             return "Planejador";
         }
         return null;

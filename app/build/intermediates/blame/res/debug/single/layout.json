@@ -116,6 +116,10 @@
         "source": "D:\\Documentos\\Workspace\\Waypoints\\waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
+        "merged": "D:\\Documentos\\Workspace\\Waypoints\\waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\itemlist_email.xml",
+        "source": "D:\\Documentos\\Workspace\\Waypoints\\waypoints\\app\\src\\main\\res\\layout\\itemlist_email.xml"
+    },
+    {
         "merged": "D:\\Documentos\\Workspace\\Waypoints\\waypoints\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
         "source": "D:\\Documentos\\Workspace\\Waypoints\\waypoints\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_layout_tab_text.xml"
     },

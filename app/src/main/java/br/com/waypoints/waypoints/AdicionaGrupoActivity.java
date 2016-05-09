@@ -8,10 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
-
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.RadioButton;
@@ -30,10 +28,6 @@ import br.com.waypoints.entity.Integrante;
 import br.com.waypoints.entity.Usuario;
 import br.com.waypoints.exeption.BusinessException;
 import br.com.waypoints.util.network.VolleyCallback;
-import android.widget.TextView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class AdicionaGrupoActivity extends AppCompatActivity {
 
@@ -42,17 +36,12 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
     private RadioButton radioButtonPlanejador;
     private RadioButton radioButtonEntregador;
     private Context context;
-    private View view;
     private EditText editTextEmail;
     private ImageButton imageButtonAdd;
     private GrupoController grupoController;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
     private GoogleApiClient client;
     private ListView listViewEmails;
-    private List<String> listEmails = new ArrayList<>();
+    private List<String> listEmails;
     private ArrayAdapter<String> adapter;
 
     @Override
@@ -70,6 +59,7 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
         adapter = new ArrayAdapter(this, R.layout.itemlist_email, R.id.textViewEmailItemList);
         listViewEmails.setAdapter(adapter);
 
+        listEmails = new ArrayList<>();
         grupoController = new GrupoController();
 
         context = imageButtonAdd.getContext();
@@ -95,11 +85,6 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
                 if (radioButtonPlanejador.isChecked()) radioButtonPlanejador.setChecked(false);
             }
         });
-
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     @Override
@@ -172,6 +157,12 @@ public class AdicionaGrupoActivity extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+
+    public void addListItem(String email) {
+        listEmails.add(email);
+        adapter.add(email);
+        adapter.notifyDataSetChanged();
     }
 
     private String tipoIntegrante() {
